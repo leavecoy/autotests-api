@@ -3,7 +3,7 @@
 import grpc
 import warnings
 
-import user_service_pb2 as user__service__pb2
+import course_service_pb2 as course__service__pb2
 
 GRPC_GENERATED_VERSION = '1.78.0'
 GRPC_VERSION = grpc.__version__
@@ -18,14 +18,14 @@ except ImportError:
 if _version_not_supported:
     raise RuntimeError(
         f'The grpc package installed is at version {GRPC_VERSION},'
-        + ' but the generated code in user_service_pb2_grpc.py depends on'
+        + ' but the generated code in course_service_pb2_grpc.py depends on'
         + f' grpcio>={GRPC_GENERATED_VERSION}.'
         + f' Please upgrade your grpc module to grpcio>={GRPC_GENERATED_VERSION}'
         + f' or downgrade your generated code using grpcio-tools<={GRPC_VERSION}.'
     )
 
 
-class UserServiceStub(object):
+class CourseServiceStub(object):
     """Missing associated documentation comment in .proto file."""
 
     def __init__(self, channel):
@@ -34,43 +34,43 @@ class UserServiceStub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.GetUser = channel.unary_unary(
-                '/userservice.UserService/GetUser',
-                request_serializer=user__service__pb2.GetUserRequest.SerializeToString,
-                response_deserializer=user__service__pb2.GetUserResponse.FromString,
+        self.GetCourse = channel.unary_unary(
+                '/courseservice.CourseService/GetCourse',
+                request_serializer=course__service__pb2.GetCourseRequest.SerializeToString,
+                response_deserializer=course__service__pb2.GetCourseResponse.FromString,
                 _registered_method=True)
 
 
-class UserServiceServicer(object):
+class CourseServiceServicer(object):
     """Missing associated documentation comment in .proto file."""
 
-    def GetUser(self, request, context):
+    def GetCourse(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
 
-def add_UserServiceServicer_to_server(servicer, server):
+def add_CourseServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'GetUser': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetUser,
-                    request_deserializer=user__service__pb2.GetUserRequest.FromString,
-                    response_serializer=user__service__pb2.GetUserResponse.SerializeToString,
+            'GetCourse': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetCourse,
+                    request_deserializer=course__service__pb2.GetCourseRequest.FromString,
+                    response_serializer=course__service__pb2.GetCourseResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'userservice.UserService', rpc_method_handlers)
+            'courseservice.CourseService', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
-    server.add_registered_method_handlers('userservice.UserService', rpc_method_handlers)
+    server.add_registered_method_handlers('courseservice.CourseService', rpc_method_handlers)
 
 
  # This class is part of an EXPERIMENTAL API.
-class UserService(object):
+class CourseService(object):
     """Missing associated documentation comment in .proto file."""
 
     @staticmethod
-    def GetUser(request,
+    def GetCourse(request,
             target,
             options=(),
             channel_credentials=None,
@@ -83,9 +83,9 @@ class UserService(object):
         return grpc.experimental.unary_unary(
             request,
             target,
-            '/userservice.UserService/GetUser',
-            user__service__pb2.GetUserRequest.SerializeToString,
-            user__service__pb2.GetUserResponse.FromString,
+            '/courseservice.CourseService/GetCourse',
+            course__service__pb2.GetCourseRequest.SerializeToString,
+            course__service__pb2.GetCourseResponse.FromString,
             options,
             channel_credentials,
             insecure,
