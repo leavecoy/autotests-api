@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package day_info;
+
+message GetDayInfoRequest {
+    string today = 1;
+    string username = 2;
+}
+
+message GetDayInfoResponse {
+    string info = 1;
+}
+
+service DayInfoService {
+    rpc GetInfo (GetDayInfoRequest) returns (GetDayInfoResponse);
+}
