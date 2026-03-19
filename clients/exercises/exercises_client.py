@@ -29,7 +29,7 @@ class GetExercisesQueryDict(TypedDict):
     """
     courseId: str
 
-class GetExercisesResponseDict:
+class GetExercisesResponseDict(TypedDict):
     """
     Описание ответа на получение списка упражнений
     """
