@@ -2,6 +2,22 @@ from typing import TypedDict
 from httpx import Response
 from clients.api_client import APIClient
 from clients.private_http_builder import get_private_http_client, AuthenticationUserDict
+from clients.files.files_client import File
+from clients.users.private_users_client import User
+
+class Course(TypedDict):
+    """
+    Описание структуры файла
+    """
+    id: str
+    title: str
+    maxScore: int
+    minScore: int
+    description: str
+    previewFile: File
+    estimatedTime: str
+    createdByUser: User
+
 
 class GetCoursesQueryDict(TypedDict):
     """
@@ -20,6 +36,12 @@ class CreateCourseRequestDict(TypedDict):
     estimatedTime: str
     previewFileId: str
     createdByUserId: str
+
+class CreateCourseResponseDict(TypedDict):
+    """
+    Описание структуры ответа создания файла
+    """
+    course: Course
 
 class UpdateCourseDict(TypedDict):
     """
@@ -62,6 +84,17 @@ class CoursesClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.post("/api/v1/courses", json=request)
+
+    def create_course(self, request: CreateCourseRequestDict) -> CreateCourseResponseDict:
+        """
+        Метод создания курса.
+
+        :param request: Словарь с title, maxScore, minScore, description, estimatedTime,
+        previewFileId, createdByUserId.
+        :return: Ответ от сервера в виде объекта .json
+        """
+        response = self.create_course_api(request)
+        return response.json()
 
     def update_course_api(self, course_id: str, request: UpdateCourseDict):
         """

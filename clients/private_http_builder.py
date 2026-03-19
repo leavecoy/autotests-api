@@ -2,7 +2,7 @@ from httpx import Client
 from clients.authentication.authentication_client import get_authentication_client, LoginRequestDict
 from typing import TypedDict
 
-class AuthenticationUserDict:
+class AuthenticationUserDict(TypedDict):
     email: str
     password: str
 

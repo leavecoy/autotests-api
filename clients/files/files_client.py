@@ -3,6 +3,15 @@ from clients.api_client import APIClient
 from httpx import Response
 from clients.private_http_builder import get_private_http_client, AuthenticationUserDict
 
+class File(TypedDict):
+    """
+    Описание структуры файла.
+    """
+    id: str
+    filename: str
+    directory: str
+    url: str
+
 class CreateFileRequestDict(TypedDict):
     """
    Описание структуры запроса на создание файла.
@@ -10,6 +19,12 @@ class CreateFileRequestDict(TypedDict):
     filename: str
     directory: str
     upload_file: str
+
+class CreateFileResponseDict(TypedDict):
+    """
+    Описание структуры ответа создания файла.
+    """
+    file: File
 
 class FilesClient(APIClient):
     """
@@ -24,7 +39,7 @@ class FilesClient(APIClient):
         """
         return self.get(f"/api/v1/files/{file_id}")
 
-    def create_file(self, request: CreateFileRequestDict) -> Response:
+    def create_file_api(self, request: CreateFileRequestDict) -> Response:
         """
         Метод создания файла.
 
@@ -36,6 +51,16 @@ class FilesClient(APIClient):
             data=request,
             files={"upload_file": open(request['upload_file'], "rb")}
         )
+
+    def create_file(self, request: CreateFileRequestDict) -> CreateFileResponseDict:
+        """
+        Метод создания файла.
+
+        :param request: Словарь с filename, directory, upload_file.
+        :return: Ответ от сервера в виде объекта .json
+        """
+        response = self.create_file_api(request)
+        return response.json()
 
     def delete_file_api(self, file_id: str) -> Response:
         """
