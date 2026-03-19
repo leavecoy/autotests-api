@@ -33,7 +33,7 @@ class GetExercisesResponseDict:
     """
     Описание ответа на получение списка упражнений
     """
-    exercises: Exercise
+    exercises: list[Exercise]
 
 class CreateExerciseRequestDict(TypedDict):
     """
