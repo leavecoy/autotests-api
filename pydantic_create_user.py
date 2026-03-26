@@ -15,6 +15,7 @@ class CreateUserRequestSchema(BaseModel):
     Описание модели запроса на создание пользователя.
     """
     email: EmailStr
+    password: constr(min_length=1, max_length=250)
     last_name: constr(min_length=1, max_length=50) = Field(alias="lastName")
     first_name: constr(min_length=1, max_length=50) = Field(alias="firstName")
     middle_name: constr(min_length=1, max_length=50) = Field(alias="middleName")
