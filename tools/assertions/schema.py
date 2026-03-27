@@ -2,7 +2,7 @@ from typing import Any
 from jsonschema import validate
 from jsonschema.validators import Draft202012Validator
 
-def validate_json_chema(instance: Any, schema: dict) -> None:
+def validate_json_schema(instance: Any, schema: dict) -> None:
     """
     Проверяет, соответствует ли JSON-объект (instance) заданной JSON-схеме (schema)
     :param instance: валидируемый JSON
