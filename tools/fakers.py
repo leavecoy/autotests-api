@@ -66,7 +66,7 @@ class Fake:
         """
         return self.faker.first_name()
 
-    def integer(self, start: int, end: int) -> int:
+    def integer(self, start: int = 1, end: int = 100) -> int:
         """
         Генерирует случайное целое число.
         :param start: Минимальное значение случайного числа.
