@@ -26,6 +26,7 @@ create_file_request = CreateFileRequestSchema(upload_file="./test_data/files/ima
 create_file_response=files_client.create_file(create_file_request)
 print("Create file data:", create_file_response)
 
+# noinspection PyArgumentList
 course = CreateCourseRequestSchema(
     preview_file_id=create_file_response.file.id,
     created_by_user_id=create_user_response.user.id

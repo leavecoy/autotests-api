@@ -27,6 +27,7 @@ class Fake:
     def email(self, domain: str | None = None) -> str:
         """
         Генерирует случайный Email.
+        :param domain: Домен генерируемой почты.
         :return: Строка со случайным Email (str).
         """
         return self.faker.email(domain=domain)
