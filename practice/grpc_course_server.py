@@ -1,5 +1,3 @@
-from pydoc import describe
-
 import grpc
 from concurrent import futures
 import course_service_pb2

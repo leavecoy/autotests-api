@@ -6,4 +6,4 @@ def test_smoke_case():
 
 @pytest.mark.regression
 def test_regression_case():
-    assert 2 * 2 == 3
+    assert 2 * 2 == 4
