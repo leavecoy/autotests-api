@@ -1,10 +1,11 @@
 from httpx import Client
 from clients.authentication.authentication_client import get_authentication_client
 from clients.authentication.authentication_schema import LoginRequestSchema
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
+
 
 class AuthenticationUserSchema(BaseModel):
-    email: str
+    email: EmailStr
     password: str
 
 def get_private_http_client(user: AuthenticationUserSchema) -> Client:
