@@ -1,7 +1,7 @@
 from httpx import Response
 from clients.api_client import APIClient
 from clients.courses.courses_schema import GetCoursesQuerySchema, CreateCourseRequestSchema, \
-    CreateCourseResponseSchema, UpdateCourseSchema
+    CreateCourseResponseSchema, UpdateCourseRequestSchema
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 
 class CoursesClient(APIClient):
@@ -47,7 +47,7 @@ class CoursesClient(APIClient):
         response = self.create_course_api(request)
         return CreateCourseResponseSchema.model_validate_json(response.text)
 
-    def update_course_api(self, course_id: str, request: UpdateCourseSchema):
+    def update_course_api(self, course_id: str, request: UpdateCourseRequestSchema):
         """
         Метод обновления курса.
 

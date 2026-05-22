@@ -26,6 +26,12 @@ class GetCoursesQuerySchema(BaseModel):
 
     user_id: str = Field(alias="userId")
 
+class GetCoursesResponseSchema(BaseModel):
+    """
+    Структура ответа на запрос получения списка курсов.
+    """
+    courses: list[CourseSchema]
+
 class CreateCourseRequestSchema(BaseModel):
     """
     Описание структуры запроса на создание курса.
@@ -42,11 +48,11 @@ class CreateCourseRequestSchema(BaseModel):
 
 class CreateCourseResponseSchema(BaseModel):
     """
-    Описание структуры ответа создания файла
+    Описание структуры ответа создания курса
     """
     course: CourseSchema
 
-class UpdateCourseSchema(BaseModel):
+class UpdateCourseRequestSchema(BaseModel):
     """
     Описание структуры запроса на обновление курса.
     """
@@ -57,3 +63,9 @@ class UpdateCourseSchema(BaseModel):
     min_score: int | None = Field(alias="minScore", default_factory=fake.min_score)
     description: str | None = Field(default_factory=fake.text)
     estimated_time: str | None = Field(alias="estimatedTime", default_factory=fake.estimated_time)
+
+class UpdateCourseResponseSchema(BaseModel):
+    """
+    Описание структуры ответа на запрос обновления курса.
+    """
+    course: CourseSchema

@@ -1,8 +1,8 @@
 from clients.errors_schema import ValidationErrorSchema, ValidationErrorResponseSchema, InternalErrorResponseSchema
-from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema, FileSchema, \
-    GetFileResponseSchema
 from tools.assertions.base import assert_equal
 from tools.assertions.errors import assert_validation_error_response
+from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema, FileSchema, \
+    GetFileResponseSchema
 
 def assert_create_file_response(request: CreateFileRequestSchema, response: CreateFileResponseSchema):
     """
