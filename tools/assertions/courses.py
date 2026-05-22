@@ -54,8 +54,8 @@ def assert_create_course_response(response: CreateCourseResponseSchema, request:
     """
     Проверяет, что ответ на создание курса соответствует запросу на создание курса.
 
-    :param response: Ответ API при запросе списка курсов.
-    :param request: Список API ответов при создании курсов.
+    :param response: Модель ответа на запрос на создание курса.
+    :param request: Модель запроса на создание курса.
     :raises AssertionError: Если данные курсов не совпадают.
     """
     assert_equal(response.course.title, request.title, "title")
