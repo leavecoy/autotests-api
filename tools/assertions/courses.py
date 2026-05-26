@@ -21,8 +21,8 @@ def assert_course(actual: CourseSchema, expected: CourseSchema):
     """
     Проверяет, что полученная модель курса соответствует ожидаемой.
 
-    :param actual: Полученная курса файла.
-    :param expected: Ожидаемая курса файла.
+    :param actual: Полученная модель курса.
+    :param expected: Ожидаемая модель курса.
     :raises AssertionError: Если хотя бы одно поле не совпадает.
     """
     assert_equal(actual=actual.id, expected=expected.id, name="id")
