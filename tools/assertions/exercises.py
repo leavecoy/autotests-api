@@ -1,7 +1,10 @@
+from clients.errors_schema import InternalErrorResponseSchema
 from clients.exercises.exercises_schema import CreateExerciseResponseSchema, CreateExerciseRequestSchema, \
     GetExerciseResponseSchema, UpdateExerciseResponseSchema, UpdateExerciseRequestSchema
 from tools.assertions.base import assert_equal
 from clients.exercises.exercises_schema import ExerciseSchema
+from tools.assertions.files import assert_internal_error_response
+
 
 def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
     """
@@ -59,3 +62,13 @@ def assert_update_exercise_response(response: UpdateExerciseResponseSchema, requ
     assert_equal(response.exercise.order_index, request.order_index, "order_index")
     assert_equal(response.exercise.description, request.description, "description")
     assert_equal(response.exercise.estimated_time, request.estimated_time, "estimated_time")
+
+def assert_exercise_not_fount_response(actual: InternalErrorResponseSchema):
+    """
+    Проверяет, что ответ на получение несуществующего упражнения соответствует ожидаемой валидационной ошибке.
+
+    :param actual: Ответ от API с ошибкой валидации, который необходимо проверить.
+    :raises AssertionError: Если фактический ответ не соответствует ожидаемому.
+    """
+    expected = InternalErrorResponseSchema(details="Exercise not found") # noqa
+    assert_internal_error_response(actual, expected)
