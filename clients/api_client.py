@@ -58,3 +58,12 @@ class APIClient:
         :return: Объект Response с данными ответа.
         """
         return self.client.delete(url=url)
+
+    def put(self, url: URL | str) -> Response:
+        """
+        Выполняет PUT-запрос (полное обновление данных).
+
+        :param url: URL-адрес эндпоинта.
+        :return: Объект Response с данными ответа.
+        """
+        return self.client.put(url=url)

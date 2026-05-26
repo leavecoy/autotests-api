@@ -8,6 +8,7 @@ from tools.assertions.schema import validate_json_schema
 from tools.assertions.users import assert_create_user_response, assert_get_user_response
 import pytest
 from tools.fakers import fake
+import allure
 
 @pytest.mark.regression
 @pytest.mark.users
@@ -15,6 +16,7 @@ class TestUsers:
     @pytest.mark.parametrize(
         "domain", ["mail.ru", "gmail.com", "example.com"]
     )
+    @allure.title("Create user")
     def test_create_user(self, domain: str, public_users_client: PublicUsersClient):
         email = fake.email(domain=domain)
         request = CreateUserRequestSchema(email=email)
@@ -27,6 +29,7 @@ class TestUsers:
 
         validate_json_schema(response.json(), response_data.model_json_schema())
 
+    @allure.title("Get user me")
     def test_get_user_me(self, function_user: UserFixture, private_users_client: PrivateUsersClient):
         response = private_users_client.get_user_me_api()
         response_data = GetUserResponseSchema.model_validate_json(response.text)

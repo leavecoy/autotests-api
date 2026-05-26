@@ -1,3 +1,5 @@
+import pytest
+import allure
 from http import HTTPStatus
 from clients.courses.courses_client import CoursesClient
 from fixtures.courses import CourseFixture
@@ -10,11 +12,11 @@ from clients.courses.courses_schema import (UpdateCourseRequestSchema, UpdateCou
                                             GetCoursesQuerySchema,
                                             GetCoursesResponseSchema, CreateCourseRequestSchema,
                                             CreateCourseResponseSchema)
-import pytest
 
 @pytest.mark.courses
 @pytest.mark.regression
 class TestCourses:
+    @allure.title("Update course")
     def test_update_course(self, function_course: CourseFixture, courses_client: CoursesClient):
         request = UpdateCourseRequestSchema()
 
@@ -25,6 +27,7 @@ class TestCourses:
 
         validate_json_schema(response.json(), response_data.model_json_schema())
 
+    @allure.title("Get course")
     def test_get_courses(
             self,
             function_user: UserFixture,
@@ -44,6 +47,7 @@ class TestCourses:
 
         validate_json_schema(response.json(), response_data.model_json_schema())
 
+    @allure.title("Create course")
     def test_create_course(
             self,
             function_user: UserFixture,
