@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEzOjA5OjMyLjgzMDI5NiIsInVzZXJfaWQiOiI2YWViYzY1NS01N2U1LTRkNzAtOWRiMC1iYzEyZWQxNzYzNGYifQ.4EVYrApebXr_28S9wKFJmiQ-mJz1kuKztx079uWs_i4' \
+ -H 'content-length: 366' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Agent letter current data responsibility factor morning.","maxScore":83,"minScore":29,"description":"Save yet worry minute example. Arrive person several teach officer too. Necessary late agency several minute south.","estimatedTime":"7 weeks","previewFileId":"2aef7388-30ea-475b-9dc3-419c62708bf7","createdByUserId":"6aebc655-57e5-4d70-9db0-bc12ed17634f"}'

@@ -1,0 +1,20 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to "200"
+INFO     COURSES_ASSERTIONS:courses.py:72 Check create course response
+INFO     BASE_ASSERTIONS:base.py:33 Check that "title" equals to "Example very many me produce someone."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "max_score" equals to "84"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "min_score" equals to "19"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "description" equals to "Behind service cold indeed. Practice green fire his. Story food role enough election.
+Around every food allow source friend race. Direction these popular resource.
+Forward reality management measure."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "estimated_time" equals to "10 weeks"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "preview_file" equals to "87cce472-5f6a-4fc8-9681-92109e3f3de0"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "name" equals to "6b311e85-e620-4292-ac76-ff0a9158d76a"
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validate JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEzOjA5OjMyLjIwMDQ3OCIsInVzZXJfaWQiOiJiY2M2MGQ4ZC04YzJlLTQzYmQtODM0Ni1hOWY4MmEwNzRiYmMifQ.q-sIjNXasej3kz_lwutKazFwum41Aj-gvnjtzcCSy3o' \
+ -H 'content-length: 436' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Who newspaper either modern hotel standard crime.","maxScore":86,"minScore":1,"description":"Environmental south skin. After will have senior national brother within. Political here class indeed direction nice.\nGlass reveal service build same glass around. Information box term every.","estimatedTime":"10 weeks","previewFileId":"c3ebea0f-1a2b-4bdb-bb29-b5b2aaae59b7","createdByUserId":"bcc60d8d-8c2e-43bd-8346-a9f82a074bbc"}'

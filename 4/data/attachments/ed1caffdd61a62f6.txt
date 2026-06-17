@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEzOjA5OjM1LjEzMTMxOCIsInVzZXJfaWQiOiJiYjIxODU4ZC0yZDM0LTQ5YWQtYWZiZC02ZDYxYTY2MjVlMDcifQ.b9TMWD8SxhlbLc_Uaj6AgxGG3p7jG4S_nCvHYeks3gU' \
+ -H 'content-length: 347' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Black prepare behind compare concern ground type.","maxScore":89,"minScore":1,"description":"Federal rate vote skill nor. Development open determine agreement see hear. Seem especially base office.","estimatedTime":"8 weeks","previewFileId":"5ae2f8d1-fbdc-4993-ba9c-17cb96343417","createdByUserId":"bb21858d-2d34-49ad-afbd-6d61a6625e07"}'

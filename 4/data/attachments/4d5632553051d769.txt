@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEzOjA5OjM2Ljk1MjIxNiIsInVzZXJfaWQiOiI5YTZlMDAzYy01MTMwLTQ4MWQtYWViMi0zYWZhM2UyMGY5ZWYifQ.187KlJwqPZSaGlFe4d0N7KIz-ONZugt0GQ9ZEtWOcdA' \
+ -H 'content-length: 308' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Factor investment put become.","maxScore":97,"minScore":14,"description":"Send fire conference call foreign trial fire wait. Hard policy each color risk form.","estimatedTime":"6 weeks","previewFileId":"086520ea-31c1-485b-bf76-580f07988256","createdByUserId":"9a6e003c-5130-481d-aeb2-3afa3e20f9ef"}'

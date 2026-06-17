@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEzOjA5OjM2LjM1MDkwNyIsInVzZXJfaWQiOiIzYWNjMzM2ZS1iOWRkLTQxMjItODZmYS00MmM5MzE1ODQ4YjAifQ.fRTZ-boBKB_Seth2biRegqczFabftrSxlPE_3YsZ0Fg' \
+ -H 'content-length: 389' \
+ -H 'content-type: application/json' \
+ -d '{"title":"When entire appear particularly base.","maxScore":83,"minScore":28,"description":"Even story third kind along get. Than every rate total. Main once administration wind.\nSome rest yes ever summer our cause. Form camera evening care nature.","estimatedTime":"5 weeks","previewFileId":"942c206e-758a-43bb-a0df-6ddab5dd3c99","createdByUserId":"3acc336e-b9dd-4122-86fa-42c9315848b0"}'

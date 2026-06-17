@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/courses/32de04cf-a6ec-4b74-80fe-b6340bcf6a1d' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEzOjA5OjMyLjgzMDI5NiIsInVzZXJfaWQiOiI2YWViYzY1NS01N2U1LTRkNzAtOWRiMC1iYzEyZWQxNzYzNGYifQ.4EVYrApebXr_28S9wKFJmiQ-mJz1kuKztx079uWs_i4' \
+ -H 'content-length: 220' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Own contain certainly yourself let consider catch.","maxScore":69,"minScore":29,"description":"Power realize mean look hope care newspaper. Market really employee ok design by still.","estimatedTime":"1 weeks"}'

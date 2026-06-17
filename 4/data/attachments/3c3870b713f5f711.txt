@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEzOjA5OjMzLjQxNDIwMSIsInVzZXJfaWQiOiI2YjMxMWU4NS1lNjIwLTQyOTItYWM3Ni1mZjBhOTE1OGQ3NmEifQ.5ONE45c-2n6x_eR14rED68T9vQvsVdetjKO3hQt7LaI' \
+ -H 'content-length: 434' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Example very many me produce someone.","maxScore":84,"minScore":19,"description":"Behind service cold indeed. Practice green fire his. Story food role enough election.\nAround every food allow source friend race. Direction these popular resource.\nForward reality management measure.","estimatedTime":"10 weeks","previewFileId":"87cce472-5f6a-4fc8-9681-92109e3f3de0","createdByUserId":"6b311e85-e620-4292-ac76-ff0a9158d76a"}'
