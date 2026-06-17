@@ -1,2 +1,5 @@
-.gitignore
 allure-results
+.idea
+.venv
+__pycache__
+allure-report
