@@ -86,7 +86,7 @@ class ExercisesClient(APIClient):
         :param request: Словарь с title, maxScore, minScore, orderIndex, description и estimatedTime.
         :return: Ответ от сервера в виде объекта .json
         """
-        response = self.update_exercise_api(exercise_id=exercise_id, request=request.model_dump(by_alias=True))
+        response = self.update_exercise_api(exercise_id=exercise_id, request=request)
         return UpdateExerciseResponseSchema.model_validate_json(response.text)
 
     @allure.step("Delete exercise")
