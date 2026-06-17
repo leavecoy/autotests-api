@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEyOjU2OjU3LjQxNjA5NiIsInVzZXJfaWQiOiJmNGNkMDM1Ny0yNTE0LTQ3MTctOWZmOS00YTU3OGZkMjlkNTcifQ.0HgVgDBIqHmQoa0szoP3TWESGMuSoM4vbII5YW1PwOc' \
+ -H 'content-length: 423' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Important create series response why situation picture.","maxScore":88,"minScore":11,"description":"Machine off experience run ago.\nAmount exactly of senior use. During affect its sound place. Feel some single mention hope likely. Bag tonight cell maintain also president.","estimatedTime":"6 weeks","previewFileId":"c1a4fdc5-04a7-458b-86c4-f9c984329245","createdByUserId":"f4cd0357-2514-4717-9ff9-4a578fd29d57"}'

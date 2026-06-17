@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEyOjU2OjU5LjE4MjQyOSIsInVzZXJfaWQiOiI3NmFmMGQwOC01Yzc2LTQwNWEtODc0ZS05Y2QzYjIzMjEzZWMifQ.GWArnfDyGwFsXJVDPQNVHGF_MPReQ3yaq4hfHs4KLd4' \
+ -H 'content-length: 363' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Better guess say those I reason among.","maxScore":53,"minScore":24,"description":"Far ground all third recognize security last. Stock hard control seem kind former situation. War sing easy blood attorney country.","estimatedTime":"2 weeks","previewFileId":"f7803522-2f92-4a85-a4bc-f8c960f6c6b9","createdByUserId":"76af0d08-5c76-405a-874e-9cd3b23213ec"}'

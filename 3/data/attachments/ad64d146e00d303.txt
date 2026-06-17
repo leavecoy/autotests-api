@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEyOjU2OjU3LjcxMzkzOSIsInVzZXJfaWQiOiI4M2JjMTMwYy1mNDIxLTQyMGEtODE3Ny03OGVkNmEwYTAwNTEifQ.G-vIj9phzxKvHRGMI0raEeE7V69StQbI0LMCQYjBWwU' \
+ -H 'content-length: 378' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Expect institution something decide.","maxScore":77,"minScore":25,"description":"Good evening media send property. Employee girl though name from east clearly.\nAgainst top person end help direction glass. By seek policy bag at.","estimatedTime":"3 weeks","previewFileId":"6712b746-fccc-4aa2-b791-2343f530ef04","createdByUserId":"83bc130c-f421-420a-8177-78ed6a0a0051"}'

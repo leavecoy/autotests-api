@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEyOjU2OjU4LjYzMDM2MCIsInVzZXJfaWQiOiI3NmFmMGQwOC01Yzc2LTQwNWEtODc0ZS05Y2QzYjIzMjEzZWMifQ.DUkKhFMnOhnNQg1sASVCx63wuy419dYN2bbERNLoj30' \
+ -H 'content-length: 376' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Support themselves the make capital end.","courseId":"08154c92-255a-4002-b7fd-8f05e41dd280","maxScore":77,"minScore":19,"orderIndex":88,"description":"Social prevent decision as fill child many discuss. Read likely heavy.\nFree Mrs lot important image. Investment pretty already spend course situation. Happy gas none fill add show apply.","estimatedTime":"3 weeks"}'

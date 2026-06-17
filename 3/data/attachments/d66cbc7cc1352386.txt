@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEyOjU2OjU1LjQwNDA0OSIsInVzZXJfaWQiOiJkZDRlZmVkNS1jMTIyLTRjNWUtYjA1OS01ZmRiZjQ2OTAzZWYifQ.3ppg3qDcF5ENLaAaw6ZZlq87LjxsVuq-shXI0WvpA30' \
+ -H 'content-length: 268' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Other act now people.","courseId":"607d995e-67fb-447d-a225-3e319026d73d","maxScore":98,"minScore":27,"orderIndex":31,"description":"Buy light ahead off. Local language myself kitchen blood book. Growth their economy store end eye.","estimatedTime":"9 weeks"}'

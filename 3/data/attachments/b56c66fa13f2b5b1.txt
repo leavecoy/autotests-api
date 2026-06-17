@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEyOjU2OjUzLjY2NDgzMSIsInVzZXJfaWQiOiI5OWZjMTFlNS02NWE0LTQwOTktYmRiOC1kN2FjMTI4YWJkNDEifQ.-iqdjgAaoX5dVbyRPe8EuXJLh5euKk-Ps4FIs4QSohQ' \
+ -H 'content-length: 337' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Bit shoulder seek however become without.","maxScore":94,"minScore":28,"description":"Clearly second reveal majority environment charge ago. Who star recent. Reflect argue message letter.","estimatedTime":"9 weeks","previewFileId":"399a0960-b110-41b4-9057-70e9a6ff4f15","createdByUserId":"99fc11e5-65a4-4099-bdb8-d7ac128abd41"}'

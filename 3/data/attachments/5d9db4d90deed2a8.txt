@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEyOjU2OjU1LjY3Njg4MiIsInVzZXJfaWQiOiIwMzcxMDVhNi1jMDc2LTQ3OTgtODg0MC0yMTY1NTUzNzFlYTAifQ.RVsPMNVD5rctv8g9nijMG5zYK-g1P3kZ65YbrMA7jMA' \
+ -H 'content-length: 395' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Reason word night that.","maxScore":63,"minScore":5,"description":"Institution commercial artist whole blue. Sound theory job age environment economy response. Surface animal especially answer say up.\nNature behavior draw. Song raise structure.","estimatedTime":"1 weeks","previewFileId":"23ec7ed2-df6f-4919-a247-e16e79a022fb","createdByUserId":"037105a6-c076-4798-8840-216555371ea0"}'

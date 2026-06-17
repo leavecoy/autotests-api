@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEyOjU2OjU1Ljk1MDg5OSIsInVzZXJfaWQiOiJkZDRlZmVkNS1jMTIyLTRjNWUtYjA1OS01ZmRiZjQ2OTAzZWYifQ.UCt7V_mcJMfNYSVKHki21bpW-th5VyWmROwuMLJX2vE' \
+ -H 'content-length: 344' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Mission blood marriage create.","maxScore":86,"minScore":7,"description":"Something case test laugh ball however. Picture modern whom spend amount. Tv return life wide about early federal stand.","estimatedTime":"6 weeks","previewFileId":"b38fa41b-693d-4eba-9ada-3036687ff5f9","createdByUserId":"dd4efed5-c122-4c5e-b059-5fdbf46903ef"}'

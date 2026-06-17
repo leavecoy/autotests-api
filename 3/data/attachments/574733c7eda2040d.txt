@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEyOjU2OjU0LjI0NzQyNSIsInVzZXJfaWQiOiI3NTk3NjE1MS1mZWU2LTRhYWItYWNmNy01NTFlOGY5YzE3NmQifQ.Tany8z14PG6xJyB4e4Q2Au3E3wXNHvpueyta9mbZbsA' \
+ -H 'content-length: 361' \
+ -H 'content-type: application/json' \
+ -d '{"title":"City offer miss.","maxScore":61,"minScore":17,"description":"Among fire money suggest sister. Citizen power arm goal myself paper source. Hot by two your item music standard Congress. Role watch education early.","estimatedTime":"2 weeks","previewFileId":"b46da72f-20fa-408d-95e9-3bb5e033b0e4","createdByUserId":"75976151-fee6-4aab-acf7-551e8f9c176d"}'

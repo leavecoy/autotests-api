@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE3VDEyOjU2OjUyLjc4MTUxMyIsInVzZXJfaWQiOiIzNzJjZjI0Ni01M2MzLTQyMGMtOTMxZi04YTU5Mjg0OTJiZWMifQ.0H13WgenTr4TlylWn7-Zj-h7x9BqwaqMGiScWrEmBC0' \
+ -H 'content-length: 396' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Fly talk police memory figure whole situation.","maxScore":69,"minScore":14,"description":"Product major surface the help feeling. Lose always study send hour book.\nBefore avoid against what foot mother.\nChange step describe. Rather lose teach.","estimatedTime":"3 weeks","previewFileId":"99995ecc-75f5-4e70-9693-4b4cf7c520cc","createdByUserId":"372cf246-53c3-420c-931f-8a5928492bec"}'
