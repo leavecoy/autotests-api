@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjIxOjQ1LjM3MjI3MCIsInVzZXJfaWQiOiJmZjI4ZjM2Yi0wZDY2LTQ5ODgtOTI4MS1hNGFhOWE5NTEwOGEifQ.gr3Izc8kz5SAS0iQh21Fa8tHByxNYgML-CbnOUhrt6k' \
+ -H 'content-length: 403' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Yet water across difficult Mr.","maxScore":75,"minScore":7,"description":"State lead bit report parent weight boy. Evidence center major research man.\nFine machine forward certain. Energy step eat sense rich. Attack suffer special happy education feel.","estimatedTime":"1 weeks","previewFileId":"d681d192-8a25-4538-a3b4-0430da384bd4","createdByUserId":"ff28f36b-0d66-4988-9281-a4aa9a95108a"}'

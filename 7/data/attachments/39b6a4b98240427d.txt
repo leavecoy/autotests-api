@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjIxOjQ2LjA2NzAyNyIsInVzZXJfaWQiOiJlZTgzMDQzOC0yOWI0LTRkNjctYjFhZS0wOWZkYzcyZmE2MjcifQ.gbTGoMkIxyA71zAmxo38jSaKVoE6V2ZJYvtZI1I8ReA' \
+ -H 'content-length: 422' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Money stay bad president difficult.","maxScore":63,"minScore":12,"description":"Husband final thus significant over wear audience.\nLand purpose product financial call image wear score. South inside adult music exist none cell goal.\nPart minute perhaps inside occur plan.","estimatedTime":"7 weeks","previewFileId":"60481db7-75f1-4d31-b3ba-bc42f56caa11","createdByUserId":"ee830438-29b4-4d67-b1ae-09fdc72fa627"}'

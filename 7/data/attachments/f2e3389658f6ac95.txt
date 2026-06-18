@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjIxOjUxLjMyODc3NyIsInVzZXJfaWQiOiJkNzMzYWEyZi1hNjk0LTRkMWItOThhOS0wNDcyOTZiNjViM2QifQ.vCd-oA_F_5KzVfa5cuUZNQBg2FYFylwKR_KnvFCQ3_Q' \
+ -H 'content-length: 392' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Since participant when perhaps thank at.","maxScore":95,"minScore":17,"description":"Challenge security well half. Day true race quality. Either alone place college.\nEverybody provide general trade they ahead. Beat receive assume tend offer.","estimatedTime":"9 weeks","previewFileId":"cef94727-df41-43b9-819f-29c2b9dc9b88","createdByUserId":"d733aa2f-a694-4d1b-98a9-047296b65b3d"}'

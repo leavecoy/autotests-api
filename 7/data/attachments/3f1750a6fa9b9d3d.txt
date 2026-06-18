@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjIxOjUwLjAyNjY3NiIsInVzZXJfaWQiOiJkZjkyNThjNy0xNTlkLTRmMzgtYmUzYi03MmQxODk5YTAxYjEifQ.GZFT-7h8nnnbl3aykqV955LdrD7oZp6aW7ssC1GKuo0' \
+ -H 'content-length: 429' \
+ -H 'content-type: application/json' \
+ -d '{"title":"High person through decision staff miss type.","maxScore":86,"minScore":18,"description":"Game people statement interest. Open bag for southern billion act all. Rate something into hope camera mouth.\nUnderstand peace bit star food democratic. Along chair film detail health gun.","estimatedTime":"8 weeks","previewFileId":"3a1d68a2-f9e2-4367-8314-f606c43fba44","createdByUserId":"df9258c7-159d-4f38-be3b-72d1899a01b1"}'

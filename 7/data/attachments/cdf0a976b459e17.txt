@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjIxOjQ5LjAwMjg3MCIsInVzZXJfaWQiOiIyYWRmYzA1Yi05YWUwLTQ3NjEtOGUyYy1lMzU5NzYxMzUxMWYifQ.Byg9_umrdZqO6Ts71T66912A19baBagWuhSN_qVWbos' \
+ -H 'content-length: 394' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Plant night bring.","maxScore":57,"minScore":28,"description":"At what no hundred. Teach because part available.\nFigure young rule. Month science feeling hospital game live.\nOne resource huge like. Interview soldier but its together business.","estimatedTime":"8 weeks","previewFileId":"d6315158-56a0-4167-8d68-2931bdbfaab4","createdByUserId":"2adfc05b-9ae0-4761-8e2c-e3597613511f"}'
