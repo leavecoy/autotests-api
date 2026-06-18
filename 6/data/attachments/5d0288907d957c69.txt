@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjE2OjU3LjA2OTMxNCIsInVzZXJfaWQiOiJlZWRhZjIzMy0yY2JiLTQxNmItYTlmZC0zOWJlNDFiOTlkYjQifQ.s3g57YkfuPanyXHF6YEkjocBnQRim-53EoLGOQ2wXwY' \
+ -H 'content-length: 375' \
+ -H 'content-type: application/json' \
+ -d '{"title":"To pattern something might office.","maxScore":92,"minScore":4,"description":"Possible newspaper current fill. Still ten cost wife ok program.\nNew grow eight threat natural rise by. Window my southern size walk team live go.","estimatedTime":"4 weeks","previewFileId":"052c732c-78c4-4e2e-bca4-864f2ea5846d","createdByUserId":"eedaf233-2cbb-416b-a9fd-39be41b99db4"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjE3OjAwLjczMDAwNiIsInVzZXJfaWQiOiIxNzQ5NzRhNi05MzNjLTQ1N2MtODM2Yy03MzZkMjA2YmE2ZTAifQ.jvBGEHcqSmtHr9xC9DSdBHDJNSfNmQRMH4e4gfst14E' \
+ -H 'content-length: 335' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Strategy you president position staff dog.","maxScore":54,"minScore":26,"description":"Environmental listen cause next conference difficult. Real marriage design case career this part.","estimatedTime":"10 weeks","previewFileId":"d4657982-83ce-4288-82b4-f46e6400b5e7","createdByUserId":"174974a6-933c-457c-836c-736d206ba6e0"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjE2OjU5LjA1MzYwMSIsInVzZXJfaWQiOiJiNWVmNmZlYy1lMGU5LTQxZDctYWFhZi05NGI3ZWQyMGNkYmIifQ.CifVEWrooMcuHxX-F6c-h2uFpIlQlfTRdUfZ7AjqNVw' \
+ -H 'content-length: 420' \
+ -H 'content-type: application/json' \
+ -d '{"title":"A animal if middle present final state per.","maxScore":88,"minScore":7,"description":"Dark summer hair daughter rule set. Key behavior professional miss.\nSystem chair ground loss.\nOnto section base media watch year. Human real weight difficult national us investment.","estimatedTime":"2 weeks","previewFileId":"c7146df1-8224-4f0d-b95a-77d9481482c0","createdByUserId":"b5ef6fec-e0e9-41d7-aaaf-94b7ed20cdbb"}'

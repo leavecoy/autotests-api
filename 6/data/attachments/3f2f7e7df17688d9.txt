@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjE2OjU2LjQxNTIzNSIsInVzZXJfaWQiOiIyYjhhYjlmMi04NTI1LTRjMWEtYmJhOC05YTJmMGYzNWRkMTgifQ.Scq9h1cOxjUPjPlz4QRwYERRwKIcfoCPe5l3imBQieo' \
+ -H 'content-length: 395' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Sport throw of else result want.","maxScore":51,"minScore":14,"description":"But unit almost two apply.\nImprove music same western. Travel Democrat enough appear tree. Detail away recent sort deep paper. Once range create radio describe little.","estimatedTime":"9 weeks","previewFileId":"e42a2cc5-ff9a-44a2-9733-d0f805a7abf1","createdByUserId":"2b8ab9f2-8525-4c1a-bba8-9a2f0f35dd18"}'

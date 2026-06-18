@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjE3OjAwLjM3ODMwNCIsInVzZXJfaWQiOiIxNzQ5NzRhNi05MzNjLTQ1N2MtODM2Yy03MzZkMjA2YmE2ZTAifQ._J5b8hzAbom045Jkc0MqxuWwbM6ooy1TA5U9eZwtvHg' \
+ -H 'content-length: 359' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Order check bring source mention successful.","courseId":"0c96b3bf-0e9e-40ac-a56c-556b5c19213e","maxScore":60,"minScore":24,"orderIndex":79,"description":"Drive message stock policy. Wide question teach yourself buy word choice.\nEither conference already represent black look. North something enjoy forward admit within.","estimatedTime":"4 weeks"}'

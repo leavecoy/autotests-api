@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjE3OjAyLjc2OTc4MiIsInVzZXJfaWQiOiI5M2UwNTk4ZC0yOGI2LTQ3NzItODk4MC1hYjQ1NWM3MGRkMjEifQ.yeb042X8j3buCIymcd5mieFRBFEYDfD01TDeerQXA5o' \
+ -H 'content-length: 343' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Lot drop whom game country bar.","maxScore":65,"minScore":8,"description":"Mouth hard perhaps whether. Work health picture month hold view probably. Space score close want example fear popular.","estimatedTime":"8 weeks","previewFileId":"b92c971a-0c88-4ab6-9cbb-533f7ea7ac49","createdByUserId":"93e0598d-28b6-4772-8980-ab455c70dd21"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjE2OjU3Ljc4MjY4OCIsInVzZXJfaWQiOiIzYTJhNzk2ZS0wMmI0LTRjMTMtOWI0ZS1kODI3NDAzMDkxYTgifQ.UgxHeIFncRf0nwZQF0XK45XLVq3hffu8u-dqYzpRBYc' \
+ -H 'content-length: 309' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Beat own skill these school mean.","maxScore":54,"minScore":14,"description":"Always north mouth picture natural action experience. Himself live increase soon.","estimatedTime":"3 weeks","previewFileId":"2bbd2f0a-ce79-4d30-87ac-330a028b3b67","createdByUserId":"3a2a796e-02b4-4c13-9b4e-d827403091a8"}'

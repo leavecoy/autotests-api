@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/courses/72bbe02a-f09a-4d2b-8b94-c345670f3a38' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjE2OjU3LjA2OTMxNCIsInVzZXJfaWQiOiJlZWRhZjIzMy0yY2JiLTQxNmItYTlmZC0zOWJlNDFiOTlkYjQifQ.s3g57YkfuPanyXHF6YEkjocBnQRim-53EoLGOQ2wXwY' \
+ -H 'content-length: 308' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Within either brother challenge.","maxScore":50,"minScore":6,"description":"Technology every respond son. Question side thus across. Season effort difference data the.\nWife behind morning. Music easy matter run reach left stage. Son current degree growth employee must.","estimatedTime":"3 weeks"}'

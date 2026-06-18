@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjE2OjU5LjcyNDQ0NCIsInVzZXJfaWQiOiJmNTViZWVmOS1lMWQ2LTRlNTktYmFlYi1lZDBlNzE3NWE0YjgifQ.7WR5SR-cpqy-RagoSrS4lNBJWhuIkFOJ2K_nEsvDyWM' \
+ -H 'content-length: 314' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Seem between find able which.","maxScore":78,"minScore":27,"description":"Court century claim campaign some team avoid. The who toward I. Authority arrive sure put.","estimatedTime":"3 weeks","previewFileId":"ce9df67d-55e6-41d6-b419-f7453a9874c5","createdByUserId":"f55beef9-e1d6-4e59-baeb-ed0e7175a4b8"}'

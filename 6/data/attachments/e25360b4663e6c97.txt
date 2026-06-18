@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjE3OjAxLjc3MTg1OCIsInVzZXJfaWQiOiI3NzQ0NjkzYi1hOWUxLTQ4YmEtYWZjMS01OWNhYzFmMWFlMmIifQ.UB0H-EDjfNoQcKSpagZI9jSxxneguVZWvvf19dUyKJI' \
+ -H 'content-length: 339' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Memory free him shake center question.","maxScore":52,"minScore":21,"description":"Drop production hope. Seek although book section out training southern. Economy Congress off parent raise.","estimatedTime":"1 weeks","previewFileId":"c8575b8d-098c-4991-8ec7-647c6105a7f4","createdByUserId":"7744693b-a9e1-48ba-afc1-59cac1f1ae2b"}'

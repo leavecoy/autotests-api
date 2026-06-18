@@ -1,0 +1,18 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to "200"
+INFO     COURSES_ASSERTIONS:courses.py:72 Check create course response
+INFO     BASE_ASSERTIONS:base.py:33 Check that "title" equals to "Beat own skill these school mean."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "max_score" equals to "54"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "min_score" equals to "14"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "description" equals to "Always north mouth picture natural action experience. Himself live increase soon."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "estimated_time" equals to "3 weeks"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "preview_file" equals to "2bbd2f0a-ce79-4d30-87ac-330a028b3b67"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "name" equals to "3a2a796e-02b4-4c13-9b4e-d827403091a8"
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validate JSON schema

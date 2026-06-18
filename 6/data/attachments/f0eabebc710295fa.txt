@@ -1,0 +1,27 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises/51c5890c-b69d-4047-b4f6-d2bfb903fe2e
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises/51c5890c-b69d-4047-b4f6-d2bfb903fe2e
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to "200"
+INFO     EXERCISES_ASSERTIONS:exercises.py:58 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:20 Check exercise
+INFO     BASE_ASSERTIONS:base.py:33 Check that "id" equals to "51c5890c-b69d-4047-b4f6-d2bfb903fe2e"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "title" equals to "Order check bring source mention successful."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "course_id" equals to "0c96b3bf-0e9e-40ac-a56c-556b5c19213e"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "max_score" equals to "60"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "min_score" equals to "24"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "order_index" equals to "79"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "description" equals to "Drive message stock policy. Wide question teach yourself buy word choice.
+Either conference already represent black look. North something enjoy forward admit within."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "estimated_time" equals to "4 weeks"
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validate JSON schema

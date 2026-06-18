@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/exercises/d88f9ff1-623d-48f0-8b84-751fc816048a' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjE3OjAyLjQxOTMzNiIsInVzZXJfaWQiOiI5M2UwNTk4ZC0yOGI2LTQ3NzItODk4MC1hYjQ1NWM3MGRkMjEifQ.Ebp-NFXexwdnOkpxbzE_b7RaRh0trOcuEyfWheXJ0AI' \
+ -H 'content-length: 227' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Then receive two head effect choose event.","maxScore":56,"minScore":24,"orderIndex":31,"description":"Oil say morning social take certainly pass. Night among treat wait report future will.","estimatedTime":"8 weeks"}'

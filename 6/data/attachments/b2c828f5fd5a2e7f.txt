@@ -1,0 +1,27 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises?courseId=4ef4d060-d8c7-4861-b885-b07619f9d107
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=4ef4d060-d8c7-4861-b885-b07619f9d107
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to "200"
+INFO     EXERCISES_ASSERTIONS:exercises.py:101 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:65 Check that length of "exercises" equals to "1"
+INFO     EXERCISES_ASSERTIONS:exercises.py:20 Check exercise
+INFO     BASE_ASSERTIONS:base.py:33 Check that "id" equals to "02b25336-fd51-451b-8dbe-8719afb069f2"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "title" equals to "Support represent above great must somebody evidence."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "course_id" equals to "4ef4d060-d8c7-4861-b885-b07619f9d107"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "max_score" equals to "51"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "min_score" equals to "9"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "order_index" equals to "85"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "description" equals to "Find left out moment listen part program size. Appear through price effect question peace."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "estimated_time" equals to "9 weeks"
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validate JSON schema
