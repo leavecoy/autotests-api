@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjMxOjA2LjE3MTE0NCIsInVzZXJfaWQiOiIzZTUyYzM4Zi1jZDViLTQ1ZjItYmU5ZC02MjMxMDYzOWJkYTAifQ.OMYCpIJzGScOp_V5zn4d2gZ6etmSpkcq6WnF3Yik3Kk' \
+ -H 'content-length: 320' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Able ball table significant case.","maxScore":64,"minScore":4,"description":"Various bank blood deal anyone. Energy sometimes environmental compare test size modern into.","estimatedTime":"2 weeks","previewFileId":"22df692b-bc95-4891-9580-64a5b8b5f88e","createdByUserId":"3e52c38f-cd5b-45f2-be9d-62310639bda0"}'

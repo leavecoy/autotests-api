@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjMxOjEwLjY5Nzg3NSIsInVzZXJfaWQiOiI0NTcyMzE1ZS05YzNjLTQ1YjctOGY3Ni0wOTUzZDI4OGExZTIifQ.uqZSxnTToLMDPdJlaPmk4-29ZLtkTjErmKe2ocuoBGg' \
+ -H 'content-length: 375' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Place above number continue.","maxScore":91,"minScore":4,"description":"Democratic throughout senior. Performance religious sound tough information statement foot matter. Beyond evidence none often appear without traditional.","estimatedTime":"7 weeks","previewFileId":"549af863-a388-4dd1-8782-dc8a38833d31","createdByUserId":"4572315e-9c3c-45b7-8f76-0953d288a1e2"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjMxOjA4LjU0MzE4NSIsInVzZXJfaWQiOiJkNzAzMTFlMC1lOGUyLTQ1M2QtYmU3ZS1hOTFkNWFjYzdlNjcifQ.QGEHUuquwmdc5vZc-jlfLLTWM1wyBXxjk_ilDfEEI4A' \
+ -H 'content-length: 327' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Key offer fight act wish past side.","courseId":"545d8384-93af-4f51-9509-93f4ae48eb5f","maxScore":73,"minScore":27,"orderIndex":57,"description":"Admit PM candidate young lead. One debate organization tonight.\nAmount either too move its than stage. Support discuss order phone hair owner.","estimatedTime":"2 weeks"}'

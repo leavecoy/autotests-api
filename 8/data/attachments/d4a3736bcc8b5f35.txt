@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjMxOjA3LjM1NjMwNiIsInVzZXJfaWQiOiI5YjI3ZjMwMS0zM2Q5LTRiY2ItOGUxMy00N2I1MzAzYjJjZWYifQ.auMosZtzy1283yxJQU6Cym-uYNMi3Tsk_UTJtfOes_A' \
+ -H 'content-length: 393' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Language remember give soldier need inside fall.","maxScore":70,"minScore":1,"description":"Determine reflect state mind weight think fire. Site war message operation.\nDemocrat sister believe every dog sing whose.\nBuild worker born seek per.","estimatedTime":"4 weeks","previewFileId":"7456f835-f89d-4e61-b113-ca803da4daee","createdByUserId":"9b27f301-33d9-4bcb-8e13-47b5303b2cef"}'

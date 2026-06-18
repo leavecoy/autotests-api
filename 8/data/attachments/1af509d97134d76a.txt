@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjMxOjA5Ljc4NTU1NyIsInVzZXJfaWQiOiIwOTI2YzY4NS02Y2U4LTRlNWItOWM5NS03ZWNlMTZjNzI1MzgifQ.hzeaZ-pQrqYFO8uATMZHzvjdgak_jr65AuhlGdPuBsI' \
+ -H 'content-length: 367' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Race still expert peace hard music perhaps.","maxScore":71,"minScore":15,"description":"Enough industry cultural chance pretty stuff miss we. Finish child necessary. Perform player laugh democratic finally investment.","estimatedTime":"8 weeks","previewFileId":"e055bcf9-95bf-4487-8299-7627f2c2be3f","createdByUserId":"0926c685-6ce8-4e5b-9c95-7ece16c72538"}'

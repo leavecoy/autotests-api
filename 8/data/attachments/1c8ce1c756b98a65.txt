@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjMxOjA1LjU3ODE4NCIsInVzZXJfaWQiOiI2NjdhOWE3NC0wYTVhLTQyNDktODY4NC00OTBiMjgwY2RlMGEifQ.98Ghnm9h57bgSe9Nd2cdo-QI5gAO2p3MiMlv1qOo8Io' \
+ -H 'content-length: 407' \
+ -H 'content-type: application/json' \
+ -d '{"title":"City which key safe walk.","maxScore":91,"minScore":28,"description":"World into majority hundred benefit. Your tax exist clear the successful clear book.\nDemocratic campaign fall popular can. Meeting south fact. Relate accept recent address put easy feel.","estimatedTime":"1 weeks","previewFileId":"1bc7ef72-ebc7-4883-a267-08df60693e77","createdByUserId":"667a9a74-0a5a-4249-8684-490b280cde0a"}'

@@ -1,0 +1,27 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises/54ab55fc-3cc3-4269-aff1-7ac2c8ca3a0f
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises/54ab55fc-3cc3-4269-aff1-7ac2c8ca3a0f
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to "200"
+INFO     EXERCISES_ASSERTIONS:exercises.py:58 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:20 Check exercise
+INFO     BASE_ASSERTIONS:base.py:33 Check that "id" equals to "54ab55fc-3cc3-4269-aff1-7ac2c8ca3a0f"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "title" equals to "Key offer fight act wish past side."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "course_id" equals to "545d8384-93af-4f51-9509-93f4ae48eb5f"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "max_score" equals to "73"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "min_score" equals to "27"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "order_index" equals to "57"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "description" equals to "Admit PM candidate young lead. One debate organization tonight.
+Amount either too move its than stage. Support discuss order phone hair owner."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "estimated_time" equals to "2 weeks"
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validate JSON schema

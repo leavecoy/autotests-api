@@ -1,0 +1,18 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to "200"
+INFO     COURSES_ASSERTIONS:courses.py:72 Check create course response
+INFO     BASE_ASSERTIONS:base.py:33 Check that "title" equals to "Able ball table significant case."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "max_score" equals to "64"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "min_score" equals to "4"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "description" equals to "Various bank blood deal anyone. Energy sometimes environmental compare test size modern into."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "estimated_time" equals to "2 weeks"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "preview_file" equals to "22df692b-bc95-4891-9580-64a5b8b5f88e"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "name" equals to "3e52c38f-cd5b-45f2-be9d-62310639bda0"
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validate JSON schema

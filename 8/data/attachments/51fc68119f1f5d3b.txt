@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjMxOjA0LjY4NzE0NyIsInVzZXJfaWQiOiJlZDE1MzE5OS1jNDQ1LTQ3MzgtOGZlMi1mZGZmZjZjNTI2NWEifQ.Yagw_rRKiZnNDJgBjjNcmRUWriRcEo85aGiu7pmKNHc' \
+ -H 'content-length: 386' \
+ -H 'content-type: application/json' \
+ -d '{"title":"With effort night mean allow speech.","maxScore":51,"minScore":6,"description":"Tree coach imagine field talk pass give.\nFly anyone Republican production board. Name most almost. Language medical marriage economic soon foot various as.","estimatedTime":"8 weeks","previewFileId":"3c245c28-e544-45fd-b9aa-1cad5dd23802","createdByUserId":"ed153199-c445-4738-8fe2-fdfff6c5265a"}'

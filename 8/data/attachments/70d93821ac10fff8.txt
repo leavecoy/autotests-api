@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjMxOjA3Ljk2MDE2NCIsInVzZXJfaWQiOiIwYmQ0NjIzZC1hNzFhLTRjMWQtODkyMC1jYTY1NWYxNGE4OWYifQ.q4Jy8MqLOfHhbaKcYnkEnIH3yYXi59_mXdpKoyIz5UQ' \
+ -H 'content-length: 371' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Religious benefit message skin effect.","maxScore":70,"minScore":12,"description":"Data mouth sure cover hear. Candidate party surface imagine floor bring despite. And magazine mouth source surface.\nUp eat Congress sort.","estimatedTime":"4 weeks","previewFileId":"2e2dd164-6a45-4247-b9ae-4638bfde4ae3","createdByUserId":"0bd4623d-a71a-4c1d-8920-ca655f14a89f"}'

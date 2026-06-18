@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/courses/86bf2244-773b-4579-a14d-329eab12beb2' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjMxOjA1LjU3ODE4NCIsInVzZXJfaWQiOiI2NjdhOWE3NC0wYTVhLTQyNDktODY4NC00OTBiMjgwY2RlMGEifQ.98Ghnm9h57bgSe9Nd2cdo-QI5gAO2p3MiMlv1qOo8Io' \
+ -H 'content-length: 256' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Also available catch gas trip opportunity lawyer.","maxScore":51,"minScore":30,"description":"Practice resource huge any sea hundred. Analysis life travel like. Break Democrat reason lay bag site. Site various at him.","estimatedTime":"10 weeks"}'

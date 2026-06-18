@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDEwOjMxOjA2LjgwMjgzOCIsInVzZXJfaWQiOiI5YjI3ZjMwMS0zM2Q5LTRiY2ItOGUxMy00N2I1MzAzYjJjZWYifQ._rDY1DTx9ep7Ktkmj_ZkymfNe6F6OXnKum0LGyjoyvM' \
+ -H 'content-length: 300' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Blood ready science success history structure.","courseId":"9d0d1b3f-b7e8-47ec-bebb-34fdb6c58023","maxScore":75,"minScore":27,"orderIndex":3,"description":"Property level individual ok. In think build stuff threat. Me environment under left east mean food table.","estimatedTime":"1 weeks"}'
