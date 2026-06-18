@@ -47,7 +47,7 @@ jobs:
           pytest -m regression --alluredir=allure-results --numprocesses 2
 
       - name: Upload Allure results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: allure-results
           path: allure-results/
@@ -64,7 +64,7 @@ jobs:
           path: gh-pages
 
       - name: Download allure-results artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: allure-results
           path: allure-results
