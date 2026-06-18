@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDExOjIyOjA5Ljk1NzU4NSIsInVzZXJfaWQiOiJkY2ZhMWQyYy0wMWMzLTRmMmMtYWU4OS1iZWVkZGUzYmZjMDgifQ.zpejjswlu_pvw53nXZBTD5DrzT54VJJhK7Hj55KLeJM' \
+ -H 'content-length: 334' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Much six travel effort visit.","maxScore":80,"minScore":16,"description":"Individual despite knowledge itself. Attention use hair actually. Responsibility join unit from camera under.","estimatedTime":"10 weeks","previewFileId":"c56c06a1-6733-4c49-a1a7-ee58cbfa1a23","createdByUserId":"dcfa1d2c-01c3-4f2c-ae89-beedde3bfc08"}'

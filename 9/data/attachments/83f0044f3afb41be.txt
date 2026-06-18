@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDExOjIyOjEzLjQ2NzA4OCIsInVzZXJfaWQiOiI2NDcxNDkxOS1lZjYyLTRlNWYtYmM2Mi00YzlkZWVhZDFkNjYifQ.34zhWD3x_RfPMO4_2HlRA6EuxShqBXhacm5VX4jlOzs' \
+ -H 'content-length: 385' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Offer feeling decide respond.","maxScore":94,"minScore":23,"description":"Begin analysis meeting into. Of maybe they day oil no guess.\nCenter doctor know all keep understand son. Follow program house morning particularly suggest when.","estimatedTime":"3 weeks","previewFileId":"5d23b374-fc97-4deb-bc50-ea2464b7ed0f","createdByUserId":"64714919-ef62-4e5f-bc62-4c9deead1d66"}'

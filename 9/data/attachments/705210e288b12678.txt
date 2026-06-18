@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDExOjIyOjE0LjA3MDkxOCIsInVzZXJfaWQiOiI1MWUxNzRhNS05NDAyLTQ2Y2YtOWZlOC02MmM1NDQ2MzI0ODgifQ.W_QiJm-rbJnQgRujKf1g_0yQhT4dGFjWIMsq1dS8-xg' \
+ -H 'content-length: 379' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Worker fall each to price.","maxScore":86,"minScore":10,"description":"Cut maybe drop next. Build campaign where their possible society true use.\nFirm dark tree leader defense get fact. Behavior many make policy yourself remain.","estimatedTime":"8 weeks","previewFileId":"0e384ee5-6ab3-402c-b0a1-44ab8ff8d671","createdByUserId":"51e174a5-9402-46cf-9fe8-62c544632488"}'

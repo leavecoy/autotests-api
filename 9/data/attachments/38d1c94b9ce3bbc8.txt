@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDExOjIyOjExLjcwMzU0OCIsInVzZXJfaWQiOiIzNDI3YTkzYi01NjQ2LTQxZjQtYjg1MC1kYjYyMTA5OWVlOTQifQ.uFkvKm1DODxoh0uo5awZZZFpc1_dSkNlvaFiWPk6rVY' \
+ -H 'content-length: 272' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Fast recognize continue accept.","courseId":"b67b88e2-49ba-4893-bbb9-c9c8378f0b2b","maxScore":56,"minScore":23,"orderIndex":27,"description":"Evidence full resource. Order term response no statement available our.\nStudy report early.","estimatedTime":"8 weeks"}'

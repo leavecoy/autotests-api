@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDExOjIyOjE1LjI2NTQxOSIsInVzZXJfaWQiOiI3MTllMDljMi0xNjVjLTRiZjItOGE4NC0yOWM4YmRiZjE2ZmUifQ.kFB6WILJESH03Ze0ljv07OtLWEzG88V6Z23fcC4PaUk' \
+ -H 'content-length: 326' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Your learn just.","maxScore":91,"minScore":4,"description":"Could certain education provide left add fall student. Say real fact price whom write really. Just window blue rich.","estimatedTime":"9 weeks","previewFileId":"677bf487-f7e9-473f-a608-fad196d9c4ff","createdByUserId":"719e09c2-165c-4bf2-8a84-29c8bdbf16fe"}'

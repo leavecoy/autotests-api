@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDExOjIyOjEyLjI1MjY1NCIsInVzZXJfaWQiOiIzNDI3YTkzYi01NjQ2LTQxZjQtYjg1MC1kYjYyMTA5OWVlOTQifQ.0efVkp2VSj8r7JaAPjGk9O4qX9zpfjT2s0PFAG4EnMI' \
+ -H 'content-length: 394' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Drug anything later style player rather discover.","maxScore":62,"minScore":11,"description":"Recently according model side whether option student against. Work door impact east design however. Put trouble include pass some appear figure style.","estimatedTime":"3 weeks","previewFileId":"8a6440c3-cf9f-4d99-8ccf-76c43e31332f","createdByUserId":"3427a93b-5646-41f4-b850-db621099ee94"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/exercises/8351943f-53b9-446e-be97-bf1863d8e201' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDExOjIyOjE0LjcxNDE5NCIsInVzZXJfaWQiOiI3MTllMDljMi0xNjVjLTRiZjItOGE4NC0yOWM4YmRiZjE2ZmUifQ.OAGQTjfp2app-HasLVeezsX-fwS4Wr86EFF6FZF4eI4' \
+ -H 'content-length: 328' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Start more rule performance real a seven.","maxScore":59,"minScore":22,"orderIndex":13,"description":"Environmental manager near low. Face anyone activity child finish. Alone though rate fish.\nCare try environment send. In forget professional listen city rock animal. Front just can again.","estimatedTime":"5 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDExOjIyOjA5LjA1OTc3MSIsInVzZXJfaWQiOiI5YWZlY2YwNi05NGY1LTRmOTMtOWRlYS0wY2MyMjAwZWEyYTgifQ.fCM9wphFg6IviuoZC56c3Dk6o4K9Yt4T6eDu3bMpnNE' \
+ -H 'content-length: 311' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Note consumer believe international draw.","maxScore":81,"minScore":18,"description":"North her company available about. News six cost hotel billion sea partner.","estimatedTime":"2 weeks","previewFileId":"c2262646-8699-43ad-9a81-8f25d3caedd3","createdByUserId":"9afecf06-94f5-4f93-9dea-0cc2200ea2a8"}'

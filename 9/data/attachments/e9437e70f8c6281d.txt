@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDExOjIyOjExLjQyNzUzMSIsInVzZXJfaWQiOiIxOTYzNDZjMC04NTI1LTRhNzQtOGM5Yi1hN2FiMTI4ZjQwNGIifQ.KmvuYFXR-QEcBG4X0lq_IUei4nhMn9Qct1IX_aENpRA' \
+ -H 'content-length: 294' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Environment so image major.","courseId":"c86ad12b-565b-44aa-9094-db019472848b","maxScore":90,"minScore":28,"orderIndex":63,"description":"Subject information measure general study along lose. Now each of few alone than. Result catch project eye hotel when.","estimatedTime":"7 weeks"}'

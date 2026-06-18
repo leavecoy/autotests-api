@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA2LTE4VDExOjIyOjE0LjcxNDE5NCIsInVzZXJfaWQiOiI3MTllMDljMi0xNjVjLTRiZjItOGE4NC0yOWM4YmRiZjE2ZmUifQ.OAGQTjfp2app-HasLVeezsX-fwS4Wr86EFF6FZF4eI4' \
+ -H 'content-length: 323' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Born add debate that manage director customer.","courseId":"f4304df6-d588-469b-b7c7-2f235abcff96","maxScore":94,"minScore":15,"orderIndex":73,"description":"Ready poor about free.\nWear figure best top. Rule create month heart space ask policy. Analysis case edge effort item anything.","estimatedTime":"3 weeks"}'

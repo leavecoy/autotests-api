@@ -1,0 +1,22 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     EXERCISES_ASSERTIONS:exercises.py:38 Check create exercise response
+INFO     BASE_ASSERTIONS:base.py:33 Check that "title" equals to "Environment so image major."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "course_id" equals to "c86ad12b-565b-44aa-9094-db019472848b"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "max_score" equals to "90"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "min_score" equals to "28"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "order_index" equals to "63"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "description" equals to "Subject information measure general study along lose. Now each of few alone than. Result catch project eye hotel when."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "estimated_time" equals to "7 weeks"
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to "200"
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validate JSON schema
