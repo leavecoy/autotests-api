@@ -57,7 +57,7 @@ jobs:
     needs: run-tests
     steps:
 
-      - name: Check out repository
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: gh-pages
