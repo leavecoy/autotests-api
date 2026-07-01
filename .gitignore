@@ -3,3 +3,9 @@ allure-results
 .venv
 __pycache__
 allure-report
+
+# coverage
+coverage.html
+coverage-results
+coverage-report.json
+coverage-history.json
