@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjIwOjAxLjMyNDU0OCIsInVzZXJfaWQiOiIyYjBmYjI5Yi0yM2JiLTRjMDgtYjlkYS01NzM4MmY4NmZiZWMifQ.AEzw1foGNyypau2ZTzZ8Th08UlHSH-0VMewOlPZ4ldo' \
+ -H 'content-length: 382' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Week technology who without tonight day.","courseId":"f674de48-5e85-423a-a5e1-d330b4549f00","maxScore":82,"minScore":21,"orderIndex":75,"description":"Seat fall receive adult key responsibility exist toward. Hair situation behind. Look training son tough conference.\nShe amount or list. Writer there stock day wear raise. Assume anyone nor go.","estimatedTime":"8 weeks"}'

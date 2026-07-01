@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjE5OjU5LjkzMDAxNiIsInVzZXJfaWQiOiI3NTA3ZTk4ZS0zZTVhLTQ2MDItYTNiNS03YzAyZGU0MmUzOGYifQ.-W0qGW2py8sZkuafurtVAJpWSzeb7MZnlJcDjV5RP2Q' \
+ -H 'content-length: 358' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Road loss one clearly.","maxScore":77,"minScore":28,"description":"Spend speech suggest former.\nPick ready food step seem population no six. Born film argue camera school. Force financial Mrs field daughter.","estimatedTime":"4 weeks","previewFileId":"84e9835b-51f3-4284-b92e-58fd206782a0","createdByUserId":"7507e98e-3e5a-4602-a3b5-7c02de42e38f"}'

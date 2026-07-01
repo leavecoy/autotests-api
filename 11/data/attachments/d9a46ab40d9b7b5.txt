@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjE5OjU5LjMxMjI0NSIsInVzZXJfaWQiOiI3NTA3ZTk4ZS0zZTVhLTQ2MDItYTNiNS03YzAyZGU0MmUzOGYifQ.z37DPCodx31kLxoMQY9zzORyPSmmjaQGf8wWlS7QVmc' \
+ -H 'content-length: 328' \
+ -H 'content-type: application/json' \
+ -d '{"title":"This way nor front ever remember build level.","courseId":"81d5b905-5df9-4769-b23a-9739720e8c37","maxScore":71,"minScore":21,"orderIndex":40,"description":"Lot million recognize everybody. Box under in music finish all employee true. Anything discover magazine water seven message whatever.","estimatedTime":"8 weeks"}'

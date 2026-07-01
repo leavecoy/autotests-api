@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjIwOjAwLjYwNTY1NSIsInVzZXJfaWQiOiJlY2Q3OTEzYS1jNzIyLTQyOTItYTg1My1lOTVmZmQ3MzNmYjgifQ.GwsAhmIkPtNXRMq-l7FvI-UqSpp0vroavQesGbns3Ys' \
+ -H 'content-length: 323' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Able relationship teach boy gun choose.","maxScore":54,"minScore":6,"description":"Form necessary how top. Series not toward best single. Task everybody increase population.","estimatedTime":"2 weeks","previewFileId":"3aba56e6-c826-452a-97ad-11577ac5e17d","createdByUserId":"ecd7913a-c722-4292-a853-e95ffd733fb8"}'

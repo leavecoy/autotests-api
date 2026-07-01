@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjE5OjU2LjAzMjUzMiIsInVzZXJfaWQiOiIyZmFkOGZlYy1lZmI2LTRkNWUtOWFiOC01Y2YxY2E4OGE2YTEifQ.6PqBgPOSoeDoG283_bundfA3yxYowBRkCWzNQbrckBI' \
+ -H 'content-length: 416' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Television cold develop shoulder any.","maxScore":58,"minScore":16,"description":"Rule pull begin evidence parent daughter.\nExplain hundred report long issue. Movement produce probably throw candidate something instead even. Project per go bar method thank manager.","estimatedTime":"6 weeks","previewFileId":"02e8dd74-0a90-4037-a838-e511e68b5fbe","createdByUserId":"2fad8fec-efb6-4d5e-9ab8-5cf1ca88a6a1"}'

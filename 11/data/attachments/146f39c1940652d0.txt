@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjE5OjU2LjY4NTA1MSIsInVzZXJfaWQiOiI4NDlkNTJiZC1kZDJhLTQ4ZGItYjU4NS00OTkyY2E2ZjUxYWIifQ.mK93zBUD8Cum2U32-fIRNt9CeDQeu1IW8Uh1O9Vqy5w' \
+ -H 'content-length: 365' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Different current simply concern.","maxScore":92,"minScore":13,"description":"Look change TV suggest. Understand view read measure popular past radio.\nWill guy where. Cell finally increase establish him wind alone.","estimatedTime":"8 weeks","previewFileId":"600b63ec-acef-4b59-b66f-a9672d23cd96","createdByUserId":"849d52bd-dd2a-48db-b585-4992ca6f51ab"}'
