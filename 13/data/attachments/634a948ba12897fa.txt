@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjMxOjQ2LjUzOTYyMCIsInVzZXJfaWQiOiJkNWMxNzU2ZC1jZjRkLTQ2MTctOGQ4NC01Yzg1NzllMGFmYzUifQ.iSHrNsdWZrBpTIyjME3LEdB0DKFvCebg8XxxMLdWARM' \
+ -H 'content-length: 297' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Education address type word close type never reveal.","courseId":"b91a2dfe-5241-429b-a6a2-482dc66efda8","maxScore":92,"minScore":21,"orderIndex":58,"description":"Music indicate cultural of necessary reach. Reality yes range state. Finish develop decade wish.","estimatedTime":"5 weeks"}'

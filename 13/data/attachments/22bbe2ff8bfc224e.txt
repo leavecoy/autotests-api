@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjMxOjQ1LjYxNDM4MyIsInVzZXJfaWQiOiI4ZjRlZWMzYy0zZWU4LTQ5YjctOTg0Mi00MzQwMWYxYTZhM2UifQ.dZ9aPMWWB6YNwnRwWfzch6jZ42gLr-X1UOkbS4EWwRY' \
+ -H 'content-length: 370' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Car force will.","maxScore":97,"minScore":10,"description":"Cut unit us should. Worry well tell run it happy. Effect my accept source than but.\nLaw nor among his go pattern control. Into let state worker moment quality.","estimatedTime":"1 weeks","previewFileId":"b8e048f1-d4c0-4160-b279-fd79282e5613","createdByUserId":"8f4eec3c-3ee8-49b7-9842-43401f1a6a3e"}'

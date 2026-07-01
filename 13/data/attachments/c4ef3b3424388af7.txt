@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjMxOjQ3LjM2MTk3MyIsInVzZXJfaWQiOiI3ZDNiNDRmMy1kMmY5LTRjZjUtYjQ5MS1iZjgxMGI1M2NiODMifQ.RwW1y0Wp8liJJREnS0EoP1baPMZy2TD8nSNvLZL6ou4' \
+ -H 'content-length: 352' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Reality watch truth big.","maxScore":76,"minScore":3,"description":"Bad court pay money and treat practice. Least act where full east record.\nMilitary spend member skill she. Interesting change enough.","estimatedTime":"1 weeks","previewFileId":"5a6f7148-e391-41ea-bec1-7b5f5efb96c2","createdByUserId":"7d3b44f3-d2f9-4cf5-b491-bf810b53cb83"}'

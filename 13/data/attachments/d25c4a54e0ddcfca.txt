@@ -1,0 +1,28 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make GET request to http://localhost:8000/api/v1/exercises?courseId=f74170c2-1bfa-4917-93d6-276e1207ad80
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=f74170c2-1bfa-4917-93d6-276e1207ad80
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to "200"
+INFO     EXERCISES_ASSERTIONS:exercises.py:101 Check get exercises response
+INFO     BASE_ASSERTIONS:base.py:65 Check that length of "exercises" equals to "1"
+INFO     EXERCISES_ASSERTIONS:exercises.py:20 Check exercise
+INFO     BASE_ASSERTIONS:base.py:33 Check that "id" equals to "c937e0d2-cecd-4970-b467-9fd6b5f353c3"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "title" equals to "From group write college kid maintain."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "course_id" equals to "f74170c2-1bfa-4917-93d6-276e1207ad80"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "max_score" equals to "56"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "min_score" equals to "26"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "order_index" equals to "4"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "description" equals to "Information consider hair site clear staff test. Community data religious which performance any.
+Act series other others. Man do manager even method."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "estimated_time" equals to "1 weeks"
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validate JSON schema

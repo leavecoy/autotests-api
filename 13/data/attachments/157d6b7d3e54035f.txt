@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjMxOjUwLjQwNTM4MyIsInVzZXJfaWQiOiIzNzFmZGZkMi1lZTgxLTQwYzctOThmNi0zZWQxNWZhM2VkNWUifQ.aLhZCD8wL8xEzwkQmboA2D5Bm5kJnU9JFtcgtsrm_I0' \
+ -H 'content-length: 389' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Moment month authority size.","maxScore":70,"minScore":1,"description":"Ready together enter. Responsibility college money true detail phone indeed.\nLay work group author significant mind. Agent ever stock set democratic detail task word.","estimatedTime":"4 weeks","previewFileId":"97ddf89a-e5f2-40ec-a2b1-8f94bd357252","createdByUserId":"371fdfd2-ee81-40c7-98f6-3ed15fa3ed5e"}'

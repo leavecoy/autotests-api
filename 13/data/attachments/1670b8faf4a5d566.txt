@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjMxOjQ1LjM0MDAxNCIsInVzZXJfaWQiOiI1MTFkZmY0NS02Mjc4LTQ3NWItYmVhZS03ZDcwZWU0MGFjMmMifQ.zlb57W1ZjgzRsKoQpk0nRvE7V5uiwBZEvxKZqNRYMrs' \
+ -H 'content-length: 419' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Increase young difference right chance.","maxScore":51,"minScore":29,"description":"Quickly worker certain home help get. Affect blue figure perform now.\nBuilding section moment stay white kitchen board. Daughter kitchen suddenly week husband court television economy.","estimatedTime":"5 weeks","previewFileId":"08a4b871-d08f-44a2-a505-c7a0684a6678","createdByUserId":"511dff45-6278-475b-beae-7d70ee40ac2c"}'

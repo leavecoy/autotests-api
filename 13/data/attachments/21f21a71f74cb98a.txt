@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/courses/75907703-c7c5-458f-9e0f-2cfe5de1baa6' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjMxOjQ1LjM0MDAxNCIsInVzZXJfaWQiOiI1MTFkZmY0NS02Mjc4LTQ3NWItYmVhZS03ZDcwZWU0MGFjMmMifQ.zlb57W1ZjgzRsKoQpk0nRvE7V5uiwBZEvxKZqNRYMrs' \
+ -H 'content-length: 301' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Consumer however which born rate fact kind.","maxScore":94,"minScore":28,"description":"Bag feeling hot low collection. Reflect new think scientist.\nLevel executive military card price. Little region until cold.\nWell although material require. Car produce room.","estimatedTime":"9 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjMxOjQ5LjE5OTk2MSIsInVzZXJfaWQiOiJlZDRkZDA0OC1mMTMzLTQ4ZmYtODk3Zi1iZWI5NDE2YTBkOTIifQ.S1VUHImZZ6SouXY2Nz-6N-P9MvkK6eiDTSnvw42OoFU' \
+ -H 'content-length: 382' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Organization surface mouth subject join check.","maxScore":71,"minScore":15,"description":"Live bring spring hard physical fact. Apply bar since bag game around country.\nTheir system account. Service safe boy result able up author.","estimatedTime":"8 weeks","previewFileId":"41843d1c-1afa-4e19-acb2-29e8401a6e5c","createdByUserId":"ed4dd048-f133-48ff-897f-beb9416a0d92"}'

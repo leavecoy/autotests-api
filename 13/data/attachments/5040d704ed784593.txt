@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjMxOjQ3LjA4NzU4OSIsInVzZXJfaWQiOiJkNWMxNzU2ZC1jZjRkLTQ2MTctOGQ4NC01Yzg1NzllMGFmYzUifQ.IayAEzoWvI2F_99BvwPYd0YJEvVoQ_IJaCJZKif2Nbk' \
+ -H 'content-length: 410' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Unit deal vote state.","maxScore":79,"minScore":29,"description":"Future thousand player music knowledge practice develop. Subject reveal agent difference beyond time.\nAnalysis ball least. Former main away top. Mother risk science between method forget wide.","estimatedTime":"10 weeks","previewFileId":"d2ba6a2f-a406-4da7-815c-3193d8162af5","createdByUserId":"d5c1756d-cf4d-4617-8d84-5c8579e0afc5"}'
