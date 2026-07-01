@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDE0OjQwOjA4LjI3NjU1NiIsInVzZXJfaWQiOiIzMDA5ZDFkZS03MDIxLTRhOGYtYTBlOS01NzY5MzdkZGE1YTAifQ.2g5dmWYW-w2ztP9HyKSSfDUpKvW7b9t5q1aX24jPS4k' \
+ -H 'content-length: 350' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Friend where half yourself.","maxScore":83,"minScore":27,"description":"Difficult add bring energy example. Art technology system enough rate Congress modern. Policy water cause care civil team thus.","estimatedTime":"10 weeks","previewFileId":"d1949dca-b3f3-4e60-b520-993bafeea1ac","createdByUserId":"3009d1de-7021-4a8f-a0e9-576937dda5a0"}'

@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make PATCH request to http://localhost:8000/api/v1/exercises/99ecf4c8-20c3-4edf-8bc8-a1316da2371a
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises/99ecf4c8-20c3-4edf-8bc8-a1316da2371a
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to "200"
+INFO     EXERCISES_ASSERTIONS:exercises.py:69 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:33 Check that "title" equals to "Bar difference your heavy there each trouble."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "max_score" equals to "83"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "min_score" equals to "0"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "order_index" equals to "96"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "description" equals to "Accept include type bad between she. Direction mean firm worker entire improve.
+Statement couple ever meet for whole admit trouble. Yeah air age pretty."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "estimated_time" equals to "10 weeks"
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validate JSON schema

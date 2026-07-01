@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDE0OjQwOjAzLjMwNDE3NiIsInVzZXJfaWQiOiJmMzhmN2M1Mi1jMzBhLTQ5MjItODc3OC03MjRlY2ExOTAxYmIifQ.iA82QVizHnmfuOrzFDqr-jI2xCBrPuV0CCJydZR2RL4' \
+ -H 'content-length: 393' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Specific air ability.","maxScore":52,"minScore":25,"description":"Participant high right like prevent likely. Individual shake democratic easy different.\nStory term price officer he entire. Air effect walk traditional upon. Old teacher leave.","estimatedTime":"3 weeks","previewFileId":"cd9fd836-1704-426a-b835-50e702b47de3","createdByUserId":"f38f7c52-c30a-4922-8778-724eca1901bb"}'

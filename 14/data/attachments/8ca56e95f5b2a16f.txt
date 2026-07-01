@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDE0OjQwOjA2Ljc5MjYzMiIsInVzZXJfaWQiOiIzMDM3MWQxNC04ZWNmLTQ0ODMtOGI1MS1hM2UxOWYxZGRhZmYifQ.wdiWziecgCynbezgLvTXhD2t0d7KuLldgHdXVPzLf_M' \
+ -H 'content-length: 418' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Scene any believe ready.","maxScore":60,"minScore":23,"description":"Run individual training eat. Nation concern single such. Street amount bill room interest industry able. Ready sign whose pull heavy growth.\nEarly energy return idea. Reason chance seat you between.","estimatedTime":"9 weeks","previewFileId":"81285c40-eeb8-4ab8-b754-68c72b5734b3","createdByUserId":"30371d14-8ecf-4483-8b51-a3e19f1ddaff"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/exercises/99ecf4c8-20c3-4edf-8bc8-a1316da2371a' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDE0OjQwOjA0LjQ3MDUzMiIsInVzZXJfaWQiOiIwNWMzY2JjYy0wYzgwLTRhZjMtYTNiMy0zYTg0OTEwMzEwZDAifQ.ZUdSVeIVxkAotmB8GxVHFI3DBEsyJXmwd4YvTSkC1TQ' \
+ -H 'content-length: 297' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Bar difference your heavy there each trouble.","maxScore":83,"minScore":0,"orderIndex":96,"description":"Accept include type bad between she. Direction mean firm worker entire improve.\nStatement couple ever meet for whole admit trouble. Yeah air age pretty.","estimatedTime":"10 weeks"}'

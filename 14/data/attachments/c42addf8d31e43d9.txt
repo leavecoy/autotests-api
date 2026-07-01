@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDE0OjQwOjA1LjAxNzU1NSIsInVzZXJfaWQiOiIwNWMzY2JjYy0wYzgwLTRhZjMtYTNiMy0zYTg0OTEwMzEwZDAifQ.sYBxsZRwDSEh2Ex1tZTf4KLIqG3y21Z3nTPqzvkTgUE' \
+ -H 'content-length: 372' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Despite listen seek language in your.","maxScore":75,"minScore":17,"description":"Hold allow how. Rest mind require.\nDecision by hot avoid material. None plant agree keep usually. Theory send without debate fish pass guy.","estimatedTime":"5 weeks","previewFileId":"f5a67a80-2276-4cc2-8cc8-dcbda0927eb0","createdByUserId":"05c3cbcc-0c80-4af3-a3b3-3a84910310d0"}'

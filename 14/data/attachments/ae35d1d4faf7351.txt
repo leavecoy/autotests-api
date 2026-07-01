@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDE0OjQwOjAxLjgwNDAzMiIsInVzZXJfaWQiOiIzN2NkM2Y1Mi0wNDhmLTRmODYtODMzNy0wNTJhZmVhNGVlMzYifQ.RGn2DOMXWP7k2FocYemFBy7zyHoZGRsy8BL07DXEFKQ' \
+ -H 'content-length: 368' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Eat fall step next.","maxScore":54,"minScore":30,"description":"Seven right then defense instead throw. Ever laugh toward million.\nLikely expect kitchen. Society what table its pretty at.\nSave debate on line section.","estimatedTime":"6 weeks","previewFileId":"ac05e6ad-46bf-4654-9598-40443c62d1f4","createdByUserId":"37cd3f52-048f-4f86-8337-052afea4ee36"}'

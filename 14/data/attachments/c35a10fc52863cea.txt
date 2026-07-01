@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDE0OjQwOjAyLjcxMjg1MiIsInVzZXJfaWQiOiIwMDFiZTY0OC1lNGI2LTRhZTYtOGUwYS1mZDNmMmY5Y2M1NTQifQ.Nq5tGl2B47NEH0qP_6oI-Ojl_xee5bFBJMQFZnDH6bQ' \
+ -H 'content-length: 434' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Authority consumer room player four true.","maxScore":92,"minScore":28,"description":"Also land decide it culture stay. Message ready two be health remain board huge. Conference piece rock happen truth thus relationship.\nOption conference class enter. Level media coach defense want.","estimatedTime":"9 weeks","previewFileId":"e7d80d35-2ac1-4288-8b66-dd4b433fe0fa","createdByUserId":"001be648-e4b6-4ae6-8e0a-fd3f2f9cc554"}'

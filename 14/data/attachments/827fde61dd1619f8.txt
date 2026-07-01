@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/courses/0d153136-6559-404c-91f2-8f762a889e3f' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDE0OjQwOjAyLjcxMjg1MiIsInVzZXJfaWQiOiIwMDFiZTY0OC1lNGI2LTRhZTYtOGUwYS1mZDNmMmY5Y2M1NTQifQ.Nq5tGl2B47NEH0qP_6oI-Ojl_xee5bFBJMQFZnDH6bQ' \
+ -H 'content-length: 233' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Produce process past quality worker.","maxScore":84,"minScore":2,"description":"Job often also. Maybe line cup design recognize according role.\nMove represent mouth. Over cause nothing test but.","estimatedTime":"6 weeks"}'
