@@ -6,12 +6,14 @@ from clients.exercises.exercises_schema import GetExercisesQuerySchema, GetExerc
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 import allure
 from tools.routes import APIRoutes
+from clients.api_coverage import tracker
 
 class ExercisesClient(APIClient):
     """
     Клиент для работы с /api/v1/exercises
     """
     @allure.step("Get exercises")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}")
     def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         """
         Метод получения списка упражнений.
@@ -31,6 +33,7 @@ class ExercisesClient(APIClient):
         return GetExercisesResponseSchema.model_validate_json(response.text)
 
     @allure.step("Get exercise")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод получения упражнения.
@@ -50,6 +53,7 @@ class ExercisesClient(APIClient):
         return GetExerciseResponseSchema.model_validate_json(response.text)
 
     @allure.step("Create exercise")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}")
     def create_exercise_api(self, request: CreateExerciseRequestSchema) -> Response:
         """
         Метод создания упражнения.
@@ -69,6 +73,7 @@ class ExercisesClient(APIClient):
         return CreateExerciseResponseSchema.model_validate_json(response.text)
 
     @allure.step("Update exercise")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def update_exercise_api(self, exercise_id: str, request: UpdateExerciseRequestSchema) -> Response:
         """
         Метод обновления упражнения.
@@ -90,6 +95,7 @@ class ExercisesClient(APIClient):
         return UpdateExerciseResponseSchema.model_validate_json(response.text)
 
     @allure.step("Delete exercise")
+    @tracker.track_coverage_httpx(f"{APIRoutes.EXERCISES}/{{exercise_id}}")
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
         Метода удаления упражнения.
