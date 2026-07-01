@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjI3OjUxLjc0MzM4MyIsInVzZXJfaWQiOiIwMjk5M2ZiOC0zZDhkLTQwY2YtYjBlNy1hMjIzOGNhYjA5ODcifQ.ZWNee-8BsWV1cYJUruU10Txtq66pjTCBjN8r6My6cOo' \
+ -H 'content-length: 398' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Organization value room thank decision.","maxScore":68,"minScore":10,"description":"Board else smile wide structure reflect. Change TV cost picture data. But nature land good bank.\nMajor painting region agreement certain. Concern law live century.","estimatedTime":"9 weeks","previewFileId":"9c90cd17-8728-4383-a096-c9f0966549ba","createdByUserId":"02993fb8-3d8d-40cf-b0e7-a2238cab0987"}'

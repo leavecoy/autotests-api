@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjI3OjUyLjc3NzY3NiIsInVzZXJfaWQiOiJiNGFiMzFiMC1iZmQ4LTQzN2UtYjU3Ni0yMzg0NWZhYmY5NmMifQ.4adjGbHRODtkBH5XW28KFq0aHbMRJeTHO26vN1Lt4m0' \
+ -H 'content-length: 297' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Painting check usually such head sell.","courseId":"a1ca4001-9a7f-45f3-82fa-44df327cbd82","maxScore":78,"minScore":24,"orderIndex":41,"description":"Standard away fine study understand north let. Resource fish son interest. Tend under whose serve start glass.","estimatedTime":"2 weeks"}'

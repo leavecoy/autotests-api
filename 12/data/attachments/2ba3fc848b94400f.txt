@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjI3OjU0LjA2OTI5NyIsInVzZXJfaWQiOiJmNjRhOWQ5OC04OTM0LTRlNWEtYTk2YS1lODA5NGE2NmNhNzMifQ.QQrCa2ZkAfkX4FKLPItAyfLokyZHFlkHRydf34GYKuM' \
+ -H 'content-length: 298' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Car hour fine the subject.","maxScore":51,"minScore":30,"description":"Game measure head artist others whether. Difference body resource social tax.","estimatedTime":"4 weeks","previewFileId":"2a4fbe40-ee1b-48f0-a32a-1e78d03fc244","createdByUserId":"f64a9d98-8934-4e5a-a96a-e8094a66ca73"}'

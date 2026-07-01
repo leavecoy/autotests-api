@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjI3OjU1LjM5ODcwMiIsInVzZXJfaWQiOiJlNzljMjgyZS01NDA1LTQwMWYtODJhMS0wYmNmN2Q4NzY0NmYifQ.bpqvz5CWgIiq-k-suI2ql-iPBhUeS5Ssb25DAR8w8qg' \
+ -H 'content-length: 445' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Education collection find defense commercial born important vote.","maxScore":100,"minScore":15,"description":"Decide large perform cover nature inside trouble. Material wish be among art. Career sound process administration check night. Market Republican follow may.\nPhone value southern fear.","estimatedTime":"2 weeks","previewFileId":"5b4aea4c-49e7-41f7-886a-e0875159804c","createdByUserId":"e79c282e-5405-401f-82a1-0bcf7d87646f"}'

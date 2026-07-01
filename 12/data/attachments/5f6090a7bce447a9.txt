@@ -1,0 +1,24 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_LOGGER:event_hooks.py:24 Make PATCH request to http://localhost:8000/api/v1/exercises/7908ad06-2bdc-4d22-9b71-4fe42464db3b
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/exercises/7908ad06-2bdc-4d22-9b71-4fe42464db3b
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to "200"
+INFO     EXERCISES_ASSERTIONS:exercises.py:69 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:33 Check that "title" equals to "Face rule response all standard order kind."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "max_score" equals to "65"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "min_score" equals to "1"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "order_index" equals to "85"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "description" equals to "Painting call participant popular college kind central cover. Minute send happen control cause citizen traditional.
+Its city political. Matter someone cup sport decide worry."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "estimated_time" equals to "6 weeks"
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validate JSON schema

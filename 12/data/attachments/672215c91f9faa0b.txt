@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjI3OjUzLjM5NTIzMiIsInVzZXJfaWQiOiJiNGFiMzFiMC1iZmQ4LTQzN2UtYjU3Ni0yMzg0NWZhYmY5NmMifQ.sorwAmH1N2WP7Lj8A12BASK2smb9MUj-NjxRNjYhkmU' \
+ -H 'content-length: 429' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Smile everybody or attack particular scene director.","maxScore":100,"minScore":27,"description":"Explain age find bank up court.\nPoor direction ability ahead. Buy decide among as customer force. Campaign for toward.\nGrow show political black arrive page. Eye they physical to.","estimatedTime":"2 weeks","previewFileId":"cad9a7b9-e957-4aad-afa3-f006e0d6f5a8","createdByUserId":"b4ab31b0-bfd8-437e-b576-23845fabf96c"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjI3OjUyLjA1MjExNSIsInVzZXJfaWQiOiI1NzJlNzcwZC1hZjJjLTQ0ODktYjg0Ni01MjJlMTEwMTVlNTAifQ.bYtzJWHwHZDOtkO4O1pvc63v2G5nYt29tTNCYG8X3tw' \
+ -H 'content-length: 371' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Particularly answer foot act draw put.","maxScore":51,"minScore":26,"description":"Someone kid word rock. Discuss toward movie sit career.\nCultural agree very protect admit can whatever easy. Push charge can pretty want.","estimatedTime":"8 weeks","previewFileId":"959e8810-eb80-4bd0-adb9-ed872e33271e","createdByUserId":"572e770d-af2c-4489-b846-522e11015e50"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjI3OjQ5LjQ4Nzg5MiIsInVzZXJfaWQiOiI1ZjFjODI5Mi1kNjc2LTRmODctOGY3Ny1jN2FkZDYxZWQxZWYifQ.rtQT5eZUIfZeGKBVPXdWZoaAptf-HJJdympgvolOvm8' \
+ -H 'content-length: 337' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Task area play state.","maxScore":67,"minScore":0,"description":"Health since dog should. Candidate main but.\nTheory none on foot wrong. Phone bring city both. Through bit owner family.","estimatedTime":"10 weeks","previewFileId":"8e886fa6-90ec-488c-b541-462518e87977","createdByUserId":"5f1c8292-d676-4f87-8f77-c7add61ed1ef"}'

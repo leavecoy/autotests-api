@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/courses/5fab077b-ad0d-4cd4-8561-7718b4c12e7b' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjI3OjQ5LjQ4Nzg5MiIsInVzZXJfaWQiOiI1ZjFjODI5Mi1kNjc2LTRmODctOGY3Ny1jN2FkZDYxZWQxZWYifQ.rtQT5eZUIfZeGKBVPXdWZoaAptf-HJJdympgvolOvm8' \
+ -H 'content-length: 199' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Factor wrong decision feel example.","maxScore":50,"minScore":12,"description":"Food look increase it free. General radio home miss friend. Full same sport rich.","estimatedTime":"1 weeks"}'

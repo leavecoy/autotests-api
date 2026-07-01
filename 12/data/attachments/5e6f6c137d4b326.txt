@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/exercises/7908ad06-2bdc-4d22-9b71-4fe42464db3b' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjI3OjU0Ljc4MTE4NCIsInVzZXJfaWQiOiJlNzljMjgyZS01NDA1LTQwMWYtODJhMS0wYmNmN2Q4NzY0NmYifQ.tSe5QRZlgd8wzPStGflzwlySjRUflcRRDzXu0TtqpjU' \
+ -H 'content-length: 316' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Face rule response all standard order kind.","maxScore":65,"minScore":1,"orderIndex":85,"description":"Painting call participant popular college kind central cover. Minute send happen control cause citizen traditional.\nIts city political. Matter someone cup sport decide worry.","estimatedTime":"6 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTAxVDEzOjI3OjUwLjE0NDg0OCIsInVzZXJfaWQiOiJkNWZiZWU3NC1hYzMwLTRhNDctYTYyZi1mMzMxY2QwMjIyNzYifQ.v5ysnM_rqBFjb6AraKT_YLfCQMQyadKuSldRXKdrpGo' \
+ -H 'content-length: 388' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Move face office office daughter.","maxScore":81,"minScore":12,"description":"Left church say go. Stand wall carry grow stage quickly.\nPerformance member keep kid figure. Where leg team put approach interest within. Mention outside lose.","estimatedTime":"5 weeks","previewFileId":"f0e69592-1d4d-4a26-be7f-76163b38650f","createdByUserId":"d5fbee74-ac30-4a47-a62f-f331cd022276"}'
