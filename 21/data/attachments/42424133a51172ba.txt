@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA5LTIxVDA4OjUxOjE4LjAzNzg0MyIsInVzZXJfaWQiOiIxOWNhZDA0NS1mMzllLTQ3YjAtYmUxYi1iMGE5NmE2NDA2NjkifQ.tZA4JDwcCU4LOO2gaJ2k4QhlAe2ZZJZjhe7xIkd21Zs' \
+ -H 'content-length: 386' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Able race safe environment include arm my.","maxScore":62,"minScore":0,"description":"Image few several report factor.\nSection measure story produce.\nAll type public nearly radio. What above understand Republican talk business region.","estimatedTime":"2 weeks","previewFileId":"253ad721-0591-44b1-8802-e5996f9ee0d8","createdByUserId":"19cad045-f39e-47b0-be1b-b0a96a640669"}'

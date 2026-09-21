@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA5LTIxVDA4OjUxOjE0Ljg2NzcyNiIsInVzZXJfaWQiOiJhNzljNmJjYi02MzMzLTQwNGYtYTg5ZC0zOTI1YmNjYjIwNTcifQ.yDHVxvyt0O0mOZqkLkuM59dbY0Qfi5DLoyaNnBlOaS0' \
+ -H 'content-length: 347' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Bring impact always student return life.","maxScore":60,"minScore":7,"description":"Magazine social new behind share check. Administration few strong deep star. Its attack meeting open significant.","estimatedTime":"8 weeks","previewFileId":"979da5df-18d8-4643-93dd-8c0dd337fb04","createdByUserId":"a79c6bcb-6333-404f-a89d-3925bccb2057"}'

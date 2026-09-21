@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA5LTIxVDA4OjUxOjE2LjI4NzEyOCIsInVzZXJfaWQiOiI4YTY2ZDg3Mi03OGQwLTRjZjQtODllNy1jZmEzZTdmN2I0YjAifQ.TVz4NBlTQ9rRfn7B4r5iXevv69bH4fe--5n5BQeUKFk' \
+ -H 'content-length: 350' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Data tend spend central determine we head.","maxScore":66,"minScore":28,"description":"Laugh stay raise certain. Common wonder around section only year. End baby themselves image perform including us.","estimatedTime":"3 weeks","previewFileId":"2bff45f5-6298-42c8-8cd8-528b7ba4b978","createdByUserId":"8a66d872-78d0-4cf4-89e7-cfa3e7f7b4b0"}'

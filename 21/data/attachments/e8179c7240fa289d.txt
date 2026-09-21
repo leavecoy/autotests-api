@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/courses/935ac1a5-7cd0-4c1e-b9d4-edba065c8696' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA5LTIxVDA4OjUxOjE2LjAxMjUwMiIsInVzZXJfaWQiOiI1NTkzZGMzNS0wZDEzLTRkOTUtOTdlZS03YmRmMTZhZjQxMDQifQ.UZNDgEeDQCS50gXMEhdp40SuCe9QdMu2EC0JA5_77aw' \
+ -H 'content-length: 267' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Play force industry yeah large name.","maxScore":64,"minScore":27,"description":"Television across consumer down participant order room compare. Yard rich per. Memory middle house ground reality. Network become them nothing that.","estimatedTime":"5 weeks"}'

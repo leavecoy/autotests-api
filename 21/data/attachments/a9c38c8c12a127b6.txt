@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA5LTIxVDA4OjUxOjE5LjUxNTg2MCIsInVzZXJfaWQiOiI2M2YwNzZiMy00NWRkLTRlZjQtOTNhZS1mOWE2NmJjYzQxYWIifQ.NA17uv3-Voy89bCPQDGOe87tby6y2_ERegqnu7ne14A' \
+ -H 'content-length: 366' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Onto light language role learn pattern ten.","maxScore":96,"minScore":2,"description":"Make reach pattern still rich teach year. Money recent consider mind yard particular property. Able he leave establish any watch.","estimatedTime":"7 weeks","previewFileId":"e007c780-ec34-4ce3-80ea-650d322bcb3b","createdByUserId":"63f076b3-45dd-4ef4-93ae-f9a66bcc41ab"}'

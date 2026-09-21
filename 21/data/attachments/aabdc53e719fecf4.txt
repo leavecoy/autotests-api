@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA5LTIxVDA4OjUxOjE5Ljc5MDY3OCIsInVzZXJfaWQiOiI3ZGMyYzViMy01NTdkLTRhMTEtYmNkMy05YjA2MDkwYjY5YmIifQ.x6NL1cP0rYPRWh5wKKCmAXdOudinzjBtBxaAUfkj7NY' \
+ -H 'content-length: 425' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Study or role represent better.","maxScore":99,"minScore":21,"description":"Include factor read claim six question assume. Property food for character. Team usually at guy medical his.\nAgree drug cover job cultural. Force over idea fast he find. Guess three over no through.","estimatedTime":"3 weeks","previewFileId":"b84de03e-f71e-4e38-b6c5-cb2e609e9eed","createdByUserId":"7dc2c5b3-557d-4a11-bcd3-9b06090b69bb"}'

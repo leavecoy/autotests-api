@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA5LTIxVDA4OjUxOjIxLjI5NDcwOSIsInVzZXJfaWQiOiJhZTE3Nzk0OS01Mjc5LTRlMDYtYjhlMy01OTFiMGE2MDYxMmYifQ.kvRzVSn5RWKBlyKilvWvDGG2Ub_0qLTWcBW9Zm4yk8Q' \
+ -H 'content-length: 366' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Water language head miss join.","maxScore":75,"minScore":10,"description":"Area exist here quite major most.\nBed line factor nearly. Customer use too.\nRisk understand official without they. Federal political movie.","estimatedTime":"8 weeks","previewFileId":"42abdbda-1aa2-4e1c-b801-c6c4ced0a25b","createdByUserId":"ae177949-5279-4e06-b8e3-591b0a60612f"}'

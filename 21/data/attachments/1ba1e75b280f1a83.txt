@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA5LTIxVDA4OjUxOjE2LjAxMjUwMiIsInVzZXJfaWQiOiI1NTkzZGMzNS0wZDEzLTRkOTUtOTdlZS03YmRmMTZhZjQxMDQifQ.UZNDgEeDQCS50gXMEhdp40SuCe9QdMu2EC0JA5_77aw' \
+ -H 'content-length: 385' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Budget fall war ground you.","maxScore":85,"minScore":3,"description":"Mission born type order happen home. Hit along modern together first suffer near.\nPosition medical cold record. Catch build adult nothing indeed together computer.","estimatedTime":"2 weeks","previewFileId":"53fd1991-59aa-49c7-b806-1e8133610f9d","createdByUserId":"5593dc35-0d13-4d95-97ee-7bdf16af4104"}'

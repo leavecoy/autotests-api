@@ -1,0 +1,18 @@
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_LOGGER:event_hooks.py:24 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_LOGGER:event_hooks.py:32 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to "200"
+INFO     COURSES_ASSERTIONS:courses.py:72 Check create course response
+INFO     BASE_ASSERTIONS:base.py:33 Check that "title" equals to "Data tend spend central determine we head."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "max_score" equals to "66"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "min_score" equals to "28"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "description" equals to "Laugh stay raise certain. Common wonder around section only year. End baby themselves image perform including us."
+INFO     BASE_ASSERTIONS:base.py:33 Check that "estimated_time" equals to "3 weeks"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "preview_file" equals to "2bff45f5-6298-42c8-8cd8-528b7ba4b978"
+INFO     BASE_ASSERTIONS:base.py:33 Check that "name" equals to "8a66d872-78d0-4cf4-89e7-cfa3e7f7b4b0"
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validate JSON schema

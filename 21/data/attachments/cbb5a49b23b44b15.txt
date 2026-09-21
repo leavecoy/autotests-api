@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA5LTIxVDA4OjUxOjE3Ljc2MTM2MyIsInVzZXJfaWQiOiI1MTQ5ZmNkMC05MzYyLTRkNGYtOGI4MC1mYWUxZmYxMDVmZjMifQ.ebkFQh2qkoy9CBNYlwGnD20BRANILAKFERuFtSr3L4U' \
+ -H 'content-length: 396' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Case often somebody wall identify idea.","maxScore":50,"minScore":25,"description":"Try accept best animal. Case say herself rise concern material minute.\nLight no understand speak huge must of nice. Cultural above production cultural civil how.","estimatedTime":"8 weeks","previewFileId":"bb752e60-6596-4455-92ec-3eb9950b2cdf","createdByUserId":"5149fcd0-9362-4d4f-8b80-fae1ff105ff3"}'
