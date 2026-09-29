@@ -15,14 +15,30 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  run-tests:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+          cache: pip
+      - run: python -m pip install -r requirements-dev.txt
+      - run: cp .env.example .env
+      - run: python -m ruff check .
+      - run: python -m ruff format --check .
+      - run: python -m pytest --collect-only -q
+
+  regression:
+    needs: quality
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
         with:
-          python-version: '3.12'
+          python-version: '3.13'
           cache: pip
       - name: Install test dependencies
         run: python -m pip install -r requirements.txt

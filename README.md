@@ -1,14 +1,17 @@
 # API Test Automation · LMS
 
-[![API tests](https://github.com/leavecoy/autotests-api/actions/workflows/test.yaml/badge.svg)](https://github.com/leavecoy/autotests-api/actions/workflows/test.yaml)
+[![API tests](https://github.com/leavecoy/autotests-api/actions/workflows/test.yml/badge.svg)](https://github.com/leavecoy/autotests-api/actions/workflows/test.yml)
 ![Python](https://img.shields.io/badge/Python-3.12%20%7C%203.13-3776AB?logo=python&logoColor=white)
 ![pytest](https://img.shields.io/badge/tests-pytest-0A9EDC?logo=pytest&logoColor=white)
 
-Портфолио QA Automation: интеграционные REST API тесты учебной платформы.
+Портфолио QA Automation: интеграционные REST API тесты платформы управления обучением.
 Пользователи, авторизация, курсы, упражнения и файлы — от HTTP-статуса
 и структуры ответа до соответствия данных отправленному запросу.
 
 **Стек:** Python · pytest · HTTPX · Pydantic v2 · JSON Schema · Faker · Allure · GitHub Actions.
+
+Парный проект: [UI Test Automation · LMS](https://github.com/leavecoy/autotests-ui).
+Репозитории используют одинаковую организацию тестов, фикстур, настроек и проверок качества.
 
 ## Что посмотреть за две минуты
 
@@ -16,7 +19,7 @@
 2. [Файлы](tests/files/test_files.py) — успешные запросы и ошибки валидации.
 3. [Клиент курсов](clients/courses/courses_client.py) и [модели](clients/courses/courses_schema.py) — разделение HTTP-запросов и данных.
 4. [Бизнес-проверки](tools/assertions/courses.py) — переиспользуемые утверждения.
-5. [CI](.github/workflows/test.yaml) — отдельный сервер и ожидание готовности API.
+5. [CI](.github/workflows/test.yml) — отдельный сервер и ожидание готовности API.
 
 ## Сценарии
 
@@ -77,7 +80,7 @@ cp .env.example .env
 ```
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 python -m pytest --collect-only -q
 ```
 
@@ -86,6 +89,8 @@ python -m pytest --collect-only -q
 по его README. В CI используется commit `ebadfac2cd8de74313e7f5469204e6e8171dd20e`.
 Устанавливайте сервер в отдельное виртуальное окружение:
 его зависимости отличаются от зависимостей тестов.
+
+## Запуск и настройки
 
 Адрес API задаётся через `HTTP_CLIENT.URL` в `.env`;
 по умолчанию — `http://127.0.0.1:8000`. Перед запуском убедитесь,
@@ -97,10 +102,16 @@ python -m pytest -m files -v
 python -m pytest -m regression -n 2 --alluredir=allure-results
 ```
 
-Маркеры: `authentication`, `users`, `courses`, `exercises`, `files`.
-Маркер `smoke` зарегистрирован, но пока не назначен сценариям.
+Проверки качества: `python -m ruff check .` и `python -m ruff format --check .`.
+
+Маркеры: `authentication`, `users`, `courses`, `exercises`, `files`, `regression`.
+
+
+Если используете системный HTTP-прокси, добавьте `127.0.0.1,localhost` в `NO_PROXY` для локального сервера.
 
 ## Отчёты и CI
+
+CI выполняет Ruff, проверку форматирования и сбор тестов перед параллельной регрессией.
 
 После запуска откройте результаты через отдельно установленный Allure CLI:
 
@@ -130,6 +141,8 @@ Allure и лог сервера не выгружаются: вложения м
 и `prompts/summary.md`. Включён `dry_run: true`.
 Ключи провайдера и GitHub-токены передаются через окружение согласно настройкам
 инструмента и не хранятся в репозитории.
+
+Правила разработки и проверки изменений — в [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Происхождение
 

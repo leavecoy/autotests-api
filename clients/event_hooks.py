@@ -1,9 +1,11 @@
 import allure
 from httpx import Request, Response
-from tools.logger import get_logger
+
 from tools.http.curl import make_curl_from_request
+from tools.logger import get_logger
 
 logger = get_logger("HTTP_LOGGER")
+
 
 def curl_event_hook(request: Request):
     """
@@ -15,6 +17,7 @@ def curl_event_hook(request: Request):
 
     allure.attach(curl_command, "cURL command", allure.attachment_type.TEXT)
 
+
 def log_request_event_hook(request: Request):
     """
     Event hook для создания логов с запросами к серверу.
@@ -22,6 +25,7 @@ def log_request_event_hook(request: Request):
     :param request: Запрос, переданный клиенту.
     """
     logger.info(f"Make {request.method} request to {request.url}")
+
 
 def log_response_event_hook(response: Response):
     """

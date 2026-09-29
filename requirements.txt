@@ -6,6 +6,5 @@ jsonschema==4.26.0
 pydantic==2.12.5
 pydantic-settings==2.14.1
 pytest==9.0.3
-pytest-rerunfailures==16.2
 pytest-xdist==3.8.0
 swagger-coverage-tool==0.33.0

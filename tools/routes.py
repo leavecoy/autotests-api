@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class APIRoutes(str, Enum):
     USERS = "/api/v1/users"
     FILES = "/api/v1/files"

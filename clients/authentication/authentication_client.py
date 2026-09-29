@@ -1,10 +1,16 @@
-from httpx import Response
-from clients.api_client import APIClient
-from clients.public_http_builder import get_public_http_client
-from clients.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema, RefreshRequestSchema
 import allure
-from tools.routes import APIRoutes
+from httpx import Response
+
+from clients.api_client import APIClient
 from clients.api_coverage import tracker
+from clients.authentication.authentication_schema import (
+    LoginRequestSchema,
+    LoginResponseSchema,
+    RefreshRequestSchema,
+)
+from clients.public_http_builder import get_public_http_client
+from tools.routes import APIRoutes
+
 
 class AuthenticationClient(APIClient):
     """
@@ -34,8 +40,7 @@ class AuthenticationClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.post(
-            f"{APIRoutes.AUTHENTICATION}/refresh",
-            json=request.model_dump(by_alias=True)
+            f"{APIRoutes.AUTHENTICATION}/refresh", json=request.model_dump(by_alias=True)
         )
 
     @allure.step("Login")
@@ -47,6 +52,7 @@ class AuthenticationClient(APIClient):
         """
         response = self.login_api(request)
         return LoginResponseSchema.model_validate_json(response.text)
+
 
 def get_authentication_client() -> AuthenticationClient:
     """

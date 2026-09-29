@@ -1,10 +1,13 @@
-from pydantic import BaseModel, Field, ConfigDict
+from pydantic import BaseModel, ConfigDict, Field
+
 from tools.fakers import fake
+
 
 class ExerciseSchema(BaseModel):
     """
     Описание структуры упражнения.
     """
+
     model_config = ConfigDict(populate_by_name=True)
 
     id: str
@@ -16,30 +19,38 @@ class ExerciseSchema(BaseModel):
     description: str
     estimated_time: str = Field(alias="estimatedTime")
 
+
 class GetExerciseResponseSchema(BaseModel):
     """
     Описание структуры ответа на получение упражнения.
     """
+
     exercise: ExerciseSchema
+
 
 class GetExercisesQuerySchema(BaseModel):
     """
     Описание структуры запроса на получение списка упражнений курса.
     """
+
     model_config = ConfigDict(populate_by_name=True)
 
     course_id: str = Field(alias="courseId")
+
 
 class GetExercisesResponseSchema(BaseModel):
     """
     Описание ответа на получение списка упражнений
     """
+
     exercises: list[ExerciseSchema]
+
 
 class CreateExerciseRequestSchema(BaseModel):
     """
     Описание структуры запроса на создание упражнения.
     """
+
     model_config = ConfigDict(populate_by_name=True)
 
     title: str = Field(default_factory=fake.sentence)
@@ -50,16 +61,20 @@ class CreateExerciseRequestSchema(BaseModel):
     description: str = Field(default_factory=fake.text)
     estimated_time: str = Field(alias="estimatedTime", default_factory=fake.estimated_time)
 
+
 class CreateExerciseResponseSchema(BaseModel):
     """
     Описание структуры ответа на создание упражнения.
     """
+
     exercise: ExerciseSchema
+
 
 class UpdateExerciseRequestSchema(BaseModel):
     """
     Описание структуры запроса на обновление упражнения.
     """
+
     model_config = ConfigDict(populate_by_name=True)
 
     title: str | None = Field(default_factory=fake.sentence)
@@ -69,8 +84,10 @@ class UpdateExerciseRequestSchema(BaseModel):
     description: str | None = Field(default_factory=fake.text)
     estimated_time: str | None = Field(alias="estimatedTime", default_factory=fake.estimated_time)
 
+
 class UpdateExerciseResponseSchema(BaseModel):
     """
     Описание структуры ответа на обновление упражнения.
     """
+
     exercise: ExerciseSchema

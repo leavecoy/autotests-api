@@ -1,25 +1,32 @@
-import pytest
-import allure
 from http import HTTPStatus
+
+import allure
+import pytest
+from allure_commons.types import Severity
+
 from clients.courses.courses_client import CoursesClient
+from clients.courses.courses_schema import (
+    CreateCourseRequestSchema,
+    CreateCourseResponseSchema,
+    GetCoursesQuerySchema,
+    GetCoursesResponseSchema,
+    UpdateCourseRequestSchema,
+    UpdateCourseResponseSchema,
+)
 from fixtures.courses import CourseFixture
 from fixtures.files import FileFixture
 from fixtures.users import UserFixture
-from tools.assertions.base import assert_status_code
-from tools.assertions.courses import assert_get_courses_response, assert_create_course_response
-from tools.assertions.schema import validate_json_schema
-from tools.allure.tags import AllureTag
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeature
-from tools.allure.stories import AllureStory
 from tools.allure.parent_suites import AllureParentSuite
-from tools.allure.suites import AllureSuite
+from tools.allure.stories import AllureStory
 from tools.allure.sub_suites import AllureSubSuite
-from allure_commons.types import Severity
-from clients.courses.courses_schema import (UpdateCourseRequestSchema, UpdateCourseResponseSchema,
-                                            GetCoursesQuerySchema,
-                                            GetCoursesResponseSchema, CreateCourseRequestSchema,
-                                            CreateCourseResponseSchema)
+from tools.allure.suites import AllureSuite
+from tools.allure.tags import AllureTag
+from tools.assertions.base import assert_status_code
+from tools.assertions.courses import assert_create_course_response, assert_get_courses_response
+from tools.assertions.schema import validate_json_schema
+
 
 @pytest.mark.courses
 @pytest.mark.regression
@@ -37,7 +44,9 @@ class TestCourses:
     def test_update_course(self, function_course: CourseFixture, courses_client: CoursesClient):
         request = UpdateCourseRequestSchema()
 
-        response = courses_client.update_course_api(course_id=function_course.response.course.id, request=request)
+        response = courses_client.update_course_api(
+            course_id=function_course.response.course.id, request=request
+        )
         response_data = UpdateCourseResponseSchema.model_validate_json(response.text)
 
         assert_status_code(actual=response.status_code, expected=HTTPStatus.OK)
@@ -50,20 +59,18 @@ class TestCourses:
     @allure.sub_suite(AllureSubSuite.GET_ENTITIES)
     @allure.severity(Severity.BLOCKER)
     def test_get_courses(
-            self,
-            function_user: UserFixture,
-            function_course: CourseFixture,
-            courses_client: CoursesClient
+        self,
+        function_user: UserFixture,
+        function_course: CourseFixture,
+        courses_client: CoursesClient,
     ):
-
-        query = GetCoursesQuerySchema(user_id=function_user.response.user.id) # noqa
+        query = GetCoursesQuerySchema(user_id=function_user.response.user.id)  # noqa
         response = courses_client.get_courses_api(query=query)
         response_data = GetCoursesResponseSchema.model_validate_json(response.text)
 
         assert_status_code(actual=response.status_code, expected=HTTPStatus.OK)
         assert_get_courses_response(
-            get_courses_response=response_data,
-            create_course_responses=[function_course.response]
+            get_courses_response=response_data, create_course_responses=[function_course.response]
         )
 
         validate_json_schema(response.json(), response_data.model_json_schema())
@@ -74,14 +81,11 @@ class TestCourses:
     @allure.sub_suite(AllureSubSuite.CREATE_ENTITY)
     @allure.severity(Severity.BLOCKER)
     def test_create_course(
-            self,
-            function_user: UserFixture,
-            function_file: FileFixture,
-            courses_client: CoursesClient
+        self, function_user: UserFixture, function_file: FileFixture, courses_client: CoursesClient
     ):
         request = CreateCourseRequestSchema(
-            preview_file_id=function_file.response.file.id, # noqa
-            created_by_user_id=function_user.response.user.id # noqa
+            preview_file_id=function_file.response.file.id,  # noqa
+            created_by_user_id=function_user.response.user.id,  # noqa
         )
         response = courses_client.create_course_api(request)
         response_data = CreateCourseResponseSchema.model_validate_json(response.text)

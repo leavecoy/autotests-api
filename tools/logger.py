@@ -1,5 +1,6 @@
 import logging
 
+
 def get_logger(name: str) -> logging.Logger:
     logger = logging.getLogger(name)
     logger.setLevel(logging.DEBUG)
@@ -7,7 +8,7 @@ def get_logger(name: str) -> logging.Logger:
     handler = logging.StreamHandler()
     handler.setLevel("DEBUG")
 
-    formatter = logging.Formatter('%(asctime)s | %(name)s | %(levelname)s | %(message)s' ) # noqa
+    formatter = logging.Formatter("%(asctime)s | %(name)s | %(levelname)s | %(message)s")  # noqa
     handler.setFormatter(formatter)
 
     logger.addHandler(handler)

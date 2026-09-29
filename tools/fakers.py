@@ -1,9 +1,11 @@
 from faker import Faker
 
+
 class Fake:
     """
     Класс для генерации случайных данных.
     """
+
     def __init__(self, faker: Faker):
         """
         :param faker: экземпляр класса Faker, который будет использоваться для генерации случайных данных.
@@ -96,5 +98,6 @@ class Fake:
         :return: Случайное значение поля maxScore от 0 до 30 (int)
         """
         return self.integer(start=0, end=30)
+
 
 fake = Fake(faker=Faker())

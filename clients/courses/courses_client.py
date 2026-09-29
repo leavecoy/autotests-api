@@ -1,11 +1,17 @@
-from httpx import Response
-from clients.api_client import APIClient
-from clients.courses.courses_schema import GetCoursesQuerySchema, CreateCourseRequestSchema, \
-    CreateCourseResponseSchema, UpdateCourseRequestSchema
-from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 import allure
-from tools.routes import APIRoutes
+from httpx import Response
+
+from clients.api_client import APIClient
 from clients.api_coverage import tracker
+from clients.courses.courses_schema import (
+    CreateCourseRequestSchema,
+    CreateCourseResponseSchema,
+    GetCoursesQuerySchema,
+    UpdateCourseRequestSchema,
+)
+from clients.private_http_builder import AuthenticationUserSchema, get_private_http_client
+from tools.routes import APIRoutes
+
 
 class CoursesClient(APIClient):
     """
@@ -68,7 +74,9 @@ class CoursesClient(APIClient):
         :param request: Словарь с title, maxScore, minScore, description, estimatedTime.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.patch(f"{APIRoutes.COURSES}/{course_id}", json=request.model_dump(by_alias=True))
+        return self.patch(
+            f"{APIRoutes.COURSES}/{course_id}", json=request.model_dump(by_alias=True)
+        )
 
     @allure.step("Delete course by id {course_id}")
     @tracker.track_coverage_httpx(f"{APIRoutes.COURSES}/{{course_id}}")
@@ -81,6 +89,7 @@ class CoursesClient(APIClient):
         """
         return self.delete(f"{APIRoutes.COURSES}/{course_id}")
 
+
 def get_courses_client(user: AuthenticationUserSchema) -> CoursesClient:
     """
     Функция создаёт экземпляр CoursesClient с уже настроенным HTTP-клиентом.
@@ -88,4 +97,3 @@ def get_courses_client(user: AuthenticationUserSchema) -> CoursesClient:
     :return: Готовый к использованию CoursesClient.
     """
     return CoursesClient(client=get_private_http_client(user))
-

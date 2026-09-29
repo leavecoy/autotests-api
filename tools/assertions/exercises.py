@@ -1,13 +1,21 @@
-from clients.errors_schema import InternalErrorResponseSchema
-from clients.exercises.exercises_schema import CreateExerciseResponseSchema, CreateExerciseRequestSchema, \
-    GetExerciseResponseSchema, UpdateExerciseResponseSchema, UpdateExerciseRequestSchema, GetExercisesResponseSchema
-from tools.assertions.base import assert_equal, assert_length
-from clients.exercises.exercises_schema import ExerciseSchema
-from tools.assertions.errors import assert_internal_error_response
 import allure
+
+from clients.errors_schema import InternalErrorResponseSchema
+from clients.exercises.exercises_schema import (
+    CreateExerciseRequestSchema,
+    CreateExerciseResponseSchema,
+    ExerciseSchema,
+    GetExerciseResponseSchema,
+    GetExercisesResponseSchema,
+    UpdateExerciseRequestSchema,
+    UpdateExerciseResponseSchema,
+)
+from tools.assertions.base import assert_equal, assert_length
+from tools.assertions.errors import assert_internal_error_response
 from tools.logger import get_logger
 
 logger = get_logger("EXERCISES_ASSERTIONS")
+
 
 @allure.step("Check exercise")
 def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
@@ -27,8 +35,11 @@ def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
     assert_equal(actual.description, expected.description, "description")
     assert_equal(actual.estimated_time, expected.estimated_time, "estimated_time")
 
+
 @allure.step("Check create exercise response")
-def assert_create_exercise_response(response: CreateExerciseResponseSchema, request: CreateExerciseRequestSchema):
+def assert_create_exercise_response(
+    response: CreateExerciseResponseSchema, request: CreateExerciseRequestSchema
+):
     """
     Проверяет, что ответ сервера соответствует запросу на создание упражнения.
     :param response: Модель ответа сервера на запрос на создание упражнения.
@@ -44,10 +55,11 @@ def assert_create_exercise_response(response: CreateExerciseResponseSchema, requ
     assert_equal(response.exercise.description, request.description, "description")
     assert_equal(response.exercise.estimated_time, request.estimated_time, "estimated_time")
 
+
 @allure.step("Check get exercise response")
 def assert_get_exercise_response(
-        get_exercise_response: GetExerciseResponseSchema,
-        create_exercise_response: CreateExerciseResponseSchema
+    get_exercise_response: GetExerciseResponseSchema,
+    create_exercise_response: CreateExerciseResponseSchema,
 ):
     """
     Проверяет, что модель получения упражнения соответствует запросу на создание упражнения.
@@ -58,8 +70,11 @@ def assert_get_exercise_response(
     logger.info("Check get exercise response")
     assert_exercise(get_exercise_response.exercise, create_exercise_response.exercise)
 
+
 @allure.step("Check update exercise response")
-def assert_update_exercise_response(response: UpdateExerciseResponseSchema, request: UpdateExerciseRequestSchema):
+def assert_update_exercise_response(
+    response: UpdateExerciseResponseSchema, request: UpdateExerciseRequestSchema
+):
     """
     Проверяет, что ответ сервера соответствует запросу на обновление полей упражнения
     :param response: Модель ответа сервера на запрос на обновление приложения.
@@ -74,6 +89,7 @@ def assert_update_exercise_response(response: UpdateExerciseResponseSchema, requ
     assert_equal(response.exercise.description, request.description, "description")
     assert_equal(response.exercise.estimated_time, request.estimated_time, "estimated_time")
 
+
 @allure.step("Check exercise not found response")
 def assert_exercise_not_fount_response(actual: InternalErrorResponseSchema):
     """
@@ -83,13 +99,14 @@ def assert_exercise_not_fount_response(actual: InternalErrorResponseSchema):
     :raises AssertionError: Если фактический ответ не соответствует ожидаемому.
     """
     logger.info("Check exercise not found response")
-    expected = InternalErrorResponseSchema(details="Exercise not found") # noqa
+    expected = InternalErrorResponseSchema(details="Exercise not found")  # noqa
     assert_internal_error_response(actual, expected)
+
 
 @allure.step("Check get exercises response")
 def assert_get_exercises_response(
-        get_exercises_responses: GetExercisesResponseSchema,
-        create_exercise_responses: list[CreateExerciseResponseSchema]
+    get_exercises_responses: GetExercisesResponseSchema,
+    create_exercise_responses: list[CreateExerciseResponseSchema],
 ):
     """
     Проверяет, что ответ на получение списка упражнений соответствует ответам на их создание.
@@ -99,7 +116,14 @@ def assert_get_exercises_response(
     :raises AssertionError: Если данные курсов не совпадают.
     """
     logger.info("Check get exercises response")
-    assert_length(actual=get_exercises_responses.exercises, expected=create_exercise_responses, name="exercises")
+    assert_length(
+        actual=get_exercises_responses.exercises,
+        expected=create_exercise_responses,
+        name="exercises",
+    )
 
     for index, create_exercise_response in enumerate(create_exercise_responses):
-        assert_exercise(actual=get_exercises_responses.exercises[index], expected=create_exercise_response.exercise)
+        assert_exercise(
+            actual=get_exercises_responses.exercises[index],
+            expected=create_exercise_response.exercise,
+        )
